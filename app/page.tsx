@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div>
       <Sidebar />
-      <main className="pt-12">
+      <main className="pt-24 pb-12 px-8">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat beatae
         et harum saepe sint possimus neque repudiandae! Quidem sequi
         dignissimos, facilis praesentium numquam aliquid dicta reiciendis

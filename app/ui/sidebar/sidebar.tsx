@@ -10,18 +10,18 @@ export function Sidebar() {
   }
 
   return (
-    <aside className="fixed w-full bg-white">
+    <aside className="fixed w-full bg-white text-center">
       <header className="h-12 flex items-center justify-between">
-        <span>MM</span>
+        <span className="p-3">MM</span>
         <HamburgerMenuButton isEnabled={menuOpen} onClick={toggleMenuOpen} />
       </header>
       <nav className={`${style.menu} ${menuOpen ? style.menuOpen : ""}`}>
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Portfolio</li>
-          <li>Blog</li>
-          <li>Contact</li>
+          <li className="p-2">home</li>
+          <li className="p-2">about</li>
+          <li className="p-2">portfolio</li>
+          <li className="p-2">blog</li>
+          <li className="p-2">contact</li>
         </ul>
       </nav>
     </aside>
