@@ -1,0 +1,55 @@
+.burger {
+  width: fit-content;
+  font-size: 1;
+  cursor: pointer;
+  padding: 3em 1.5em;
+  transition:
+    all 0.7s,
+    font-size 0s;
+  transition-timing-function: cubic-bezier(0.68, -0.35, 0.265, 1.35);
+
+  & > div {
+    width: 4em;
+    height: 0.5em;
+    border-radius: 1em;
+    background: var(--foreground-color);
+    transition:
+      all 0.1s 0.3s,
+      font-size 0s;
+
+    &::before,
+    &::after {
+      transition: font-size 0s;
+      content: "";
+      display: block;
+      position: absolute;
+      width: 4em;
+      height: 0.5em;
+      background: var(--foreground-color);
+      border-radius: 1em;
+      transition:
+        all 0.3s 0.2s,
+        font-size 0s;
+    }
+    &::before {
+      margin-top: -1.5em;
+    }
+    &::after {
+      margin-top: 1.5em;
+    }
+  }
+}
+
+.toggled {
+  transform: rotate(180deg);
+
+  > div::before {
+    transform: rotate(45deg) translate(1.1em, 1em);
+  }
+  > div {
+    background: transparent;
+  }
+  > div::after {
+    transform: rotate(-45deg) translate(1.1em, -1em);
+  }
+}
