@@ -6,9 +6,7 @@ $space: 0.5em;
   width: fit-content;
   cursor: pointer;
   padding: 1em;
-  transition:
-    all 0.7s,
-    font-size 0s;
+  transition: all 0.7s, font-size 0s;
   transition-timing-function: cubic-bezier(0.68, -0.35, 0.265, 1.35);
 
   & > div {
@@ -16,9 +14,7 @@ $space: 0.5em;
     height: $height;
     border-radius: 1em;
     background: var(--foreground-color);
-    transition:
-      all 0.1s 0.3s,
-      font-size 0s;
+    transition: all 0.1s 0.3s, font-size 0s;
 
     &::before,
     &::after {
@@ -30,9 +26,7 @@ $space: 0.5em;
       height: $height;
       background: var(--foreground-color);
       border-radius: 1em;
-      transition:
-        all 0.3s 0.2s,
-        font-size 0s;
+      transition: all 0.3s 0.2s, font-size 0s;
     }
     &::before {
       margin-top: -$space;

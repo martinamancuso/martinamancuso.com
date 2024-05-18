@@ -1,35 +1,12 @@
 "use client";
 
-import { useState } from "react";
-import { HamburgerMenuButton } from "./ui/hamburger-menu-button";
-import style from "./page.module.scss";
+import { Sidebar } from "./ui/sidebar/sidebar";
 
 export default function Home() {
-  const [menuOpen, setMenuOpen] = useState(false)
-
-  function toggleMenuOpen() {
-    setMenuOpen((prevValue) => !prevValue)
-  }
 
   return (
     <div>
-      <aside className="fixed w-full bg-white">
-        <header className="h-12 flex items-center justify-between">
-          <span>MM</span>
-          <HamburgerMenuButton 
-            isEnabled={menuOpen} 
-            onClick={toggleMenuOpen}/>
-        </header>
-        <nav className={`${style.menu} ${menuOpen ? style.menuOpen : ''}`}>
-          <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Portfolio</li>
-            <li>Blog</li>
-            <li>Contact</li>
-          </ul>
-        </nav>
-      </aside>
+      <Sidebar />
       <main className="pt-12">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat beatae
         et harum saepe sint possimus neque repudiandae! Quidem sequi
