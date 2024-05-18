@@ -8,8 +8,20 @@
   max-height: 200px;
 }
 
+// TODO: Move to Tailwind
 @media (min-width: 1024px) {
   .menu {
     max-height: none;
+  }
+  
+  .flexMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .spanMenu {
+    padding-bottom: 68px;
   }
 }
