@@ -13,7 +13,6 @@ export default function Home() {
   return (
     <div>
       <aside className="fixed h-12 w-full bg-white">
-        ASIDE
         <HamburgerMenuButton isEnabled={menuOpen} onClick={toggleMenuOpen}/>
       </aside>
       <main className="pt-12">

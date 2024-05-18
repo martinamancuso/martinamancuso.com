@@ -1,16 +1,19 @@
+$width: 1.1em;
+$height: 0.1em;
+$space: 0.5em;
+
 .burger {
   width: fit-content;
-  font-size: 1;
   cursor: pointer;
-  padding: 3em 1.5em;
+  padding: 1em;
   transition:
     all 0.7s,
     font-size 0s;
   transition-timing-function: cubic-bezier(0.68, -0.35, 0.265, 1.35);
 
   & > div {
-    width: 4em;
-    height: 0.5em;
+    width: $width;
+    height: $height;
     border-radius: 1em;
     background: var(--foreground-color);
     transition:
@@ -23,8 +26,8 @@
       content: "";
       display: block;
       position: absolute;
-      width: 4em;
-      height: 0.5em;
+      width: $width;
+      height: $height;
       background: var(--foreground-color);
       border-radius: 1em;
       transition:
@@ -32,10 +35,10 @@
         font-size 0s;
     }
     &::before {
-      margin-top: -1.5em;
+      margin-top: -$space;
     }
     &::after {
-      margin-top: 1.5em;
+      margin-top: $space;
     }
   }
 }
@@ -44,12 +47,12 @@
   transform: rotate(180deg);
 
   > div::before {
-    transform: rotate(45deg) translate(1.1em, 1em);
+    transform: rotate(45deg) translate(0.4em, 0.3em);
   }
   > div {
     background: transparent;
   }
   > div::after {
-    transform: rotate(-45deg) translate(1.1em, -1em);
+    transform: rotate(-45deg) translate(0.4em, -0.3em);
   }
 }
