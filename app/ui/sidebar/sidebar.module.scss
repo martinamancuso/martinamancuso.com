@@ -7,3 +7,9 @@
 .menuOpen {
   max-height: 200px;
 }
+
+@media (min-width: 1024px) {
+  .menu {
+    max-height: none;
+  }
+}

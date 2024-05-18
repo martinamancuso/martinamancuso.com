@@ -5,9 +5,11 @@ import { Sidebar } from "./ui/sidebar/sidebar";
 export default function Home() {
 
   return (
-    <div>
+    <div className="lg:flex lg:w-screen lg:h-screen">
       <Sidebar />
-      <main className="pt-24 pb-12 px-8">
+      <main className="pt-24 pb-12 px-8 flex-grow overflow-auto">
+        <div>
+
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat beatae
         et harum saepe sint possimus neque repudiandae! Quidem sequi
         dignissimos, facilis praesentium numquam aliquid dicta reiciendis
@@ -41,6 +43,7 @@ export default function Home() {
         dolorem ad vel reiciendis tempore provident corporis ex beatae,
         accusantium dignissimos quidem deserunt quod! Commodi dignissimos, vero
         vel ullam qui, fuga magni cupiditate harum nihil illo velit!
+        </div>
       </main>
     </div>
   );

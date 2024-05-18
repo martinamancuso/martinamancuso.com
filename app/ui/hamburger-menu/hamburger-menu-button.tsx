@@ -3,13 +3,15 @@ import style from "./hamburger-menu-button.module.scss";
 export function HamburgerMenuButton({
   isEnabled,
   onClick,
+  className,
 }: {
   isEnabled: boolean;
   onClick: Function;
+  className: string;
 }) {
   return (
     <div
-      className={`${style.burger} ${isEnabled ? style.toggled : ""}`}
+      className={`${className} ${style.burger} ${isEnabled ? style.toggled : ""}`}
       onClick={() => {
         onClick();
       }}
