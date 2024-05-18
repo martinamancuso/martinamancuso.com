@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { HamburgerMenuButton } from "./ui/hamburger-menu-button";
+import style from "./page.module.scss";
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -12,9 +13,22 @@ export default function Home() {
 
   return (
     <div>
-      <aside className="fixed h-12 w-full bg-white flex items-center justify-between">
-        <span>MM</span>
-        <HamburgerMenuButton isEnabled={menuOpen} onClick={toggleMenuOpen}/>
+      <aside className="fixed w-full bg-white">
+        <header className="h-12 flex items-center justify-between">
+          <span>MM</span>
+          <HamburgerMenuButton 
+            isEnabled={menuOpen} 
+            onClick={toggleMenuOpen}/>
+        </header>
+        <nav className={`${style.menu} ${menuOpen ? style.menuOpen : ''}`}>
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Portfolio</li>
+            <li>Blog</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
       </aside>
       <main className="pt-12">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat beatae
