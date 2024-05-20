@@ -1,5 +1,3 @@
-"use client";
-
 import { Sidebar } from "./ui/sidebar/sidebar";
 
 export default function Home() {

@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import { HamburgerMenuButton } from "../hamburger-menu/hamburger-menu-button";
 import style from "./sidebar.module.scss";
