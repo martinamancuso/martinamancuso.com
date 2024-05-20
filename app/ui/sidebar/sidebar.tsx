@@ -10,11 +10,9 @@ export function Sidebar() {
   }
 
   return (
-    <aside
-      className={`${style.flexMenu} fixed lg:relative w-full lg:w-80 lg:shrink-0 bg-white text-center`}
-    >
+    <aside className="fixed lg:relative w-full lg:w-80 lg:shrink-0 bg-white text-center lg:flex lg:flex-col lg:justify-center lg:items-center">
       <header className="h-12 flex items-center justify-between">
-        <span className={`${style.spanMenu} p-3`}>MM</span>
+        <span className="p-3 lg:pb-[68px]">MM</span>
         <HamburgerMenuButton
           className="lg:hidden"
           isEnabled={menuOpen}
