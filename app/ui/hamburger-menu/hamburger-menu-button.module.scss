@@ -1,0 +1,52 @@
+$width: 1.5em;
+$height: 0.1em;
+$space: 0.5em;
+
+.burger {
+  width: fit-content;
+  cursor: pointer;
+  padding: 1em;
+  transition: all 0.7s, font-size 0s;
+  transition-timing-function: cubic-bezier(0.68, -0.35, 0.265, 1.35);
+
+  & > div {
+    width: $width;
+    height: $height;
+    border-radius: 1em;
+    background: var(--foreground-color);
+    transition: all 0.1s 0.3s, font-size 0s;
+
+    &::before,
+    &::after {
+      transition: font-size 0s;
+      content: "";
+      display: block;
+      position: absolute;
+      width: $width;
+      height: $height;
+      background: var(--foreground-color);
+      border-radius: 1em;
+      transition: all 0.3s 0.2s, font-size 0s;
+    }
+    &::before {
+      margin-top: -$space;
+    }
+    &::after {
+      margin-top: $space;
+    }
+  }
+}
+
+.toggled {
+  transform: rotate(180deg);
+
+  > div::before {
+    transform: rotate(45deg) translate(0.4em, 0.3em);
+  }
+  > div {
+    background: transparent;
+  }
+  > div::after {
+    transform: rotate(-45deg) translate(0.4em, -0.3em);
+  }
+}
