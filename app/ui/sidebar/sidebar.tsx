@@ -10,24 +10,27 @@ export function Sidebar() {
   }
 
   return (
-    <aside className="fixed lg:relative w-full lg:w-80 lg:shrink-0 bg-white text-center lg:flex lg:flex-col lg:justify-center lg:items-center">
+    <aside className="fixed lg:relative w-full lg:w-80 lg:shrink-0 bg-white text-center lg:flex lg:flex-col lg:justify-around lg:items-center">
       <header className="h-12 flex items-center justify-between">
-        <span className="p-3 lg:pb-[68px]">MM</span>
+        <span className="p-3">MM</span>
         <HamburgerMenuButton
           className="lg:hidden"
           isEnabled={menuOpen}
           onClick={toggleMenuOpen}
         />
       </header>
-      <nav className={`${style.menu} ${menuOpen ? style.menuOpen : ""}`}>
+      <nav className={`overflow-hidden ${style.menu} ${menuOpen ? style.menuOpen : ""}`}>
         <ul>
-          <li className="p-2">home</li>
-          <li className="p-2">about</li>
-          <li className="p-2">portfolio</li>
-          <li className="p-2">blog</li>
-          <li className="p-2">contact</li>
+          <li className="p-2">Home</li>
+          <li className="p-2">About</li>
+          {/* <li className="p-2">Portfolio</li> */}
+          <li className="p-2">Blog</li>
+          <li className="p-2">Contact</li>
         </ul>
       </nav>
+      <footer className="hidden lg:block">
+        SOCIAL ICONS
+      </footer>
     </aside>
   );
 }
