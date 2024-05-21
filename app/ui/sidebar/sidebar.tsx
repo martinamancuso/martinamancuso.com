@@ -4,6 +4,7 @@ import { useState } from "react";
 import { HamburgerMenuButton } from "../hamburger-menu/hamburger-menu-button";
 import style from "./sidebar.module.scss";
 import { Logo } from "../logo/logo";
+import { Footer } from "../footer/footer";
 
 export function Sidebar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -35,7 +36,7 @@ export function Sidebar() {
           <li className="p-2">contact</li>
         </ul>
       </nav>
-      <footer className="hidden lg:block">SOCIAL ICONS</footer>
+      <Footer />
     </aside>
   );
 }
