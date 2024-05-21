@@ -14,10 +14,10 @@ export function Sidebar() {
   }
 
   return (
-    <aside className="fixed border-r border-slate-200 lg:relative w-full lg:w-80 lg:shrink-0 bg-white text-center lg:flex lg:flex-col lg:justify-around lg:items-center">
+    <aside className="fixed lg:border-r lg:border-slate-200 lg:relative w-full lg:w-80 lg:shrink-0 bg-white text-center lg:flex lg:flex-col lg:justify-around lg:items-center">
       <header className="h-12 flex items-center justify-between">
         <span
-          className={`${dawning.className} text-4xl block`}
+          className={`${dawning.className} text-4xl pl-3 lg:pl-0`}
         >
           Martina Mancuso
         </span>
