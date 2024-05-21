@@ -30,16 +30,16 @@ export function Sidebar() {
         }`}
       >
         <ul>
-          <li className="p-2 tracking-wider">
+          <li className="p-2 tracking-wider hover:text-[#84c0f6]">
             <Link href="/">Home</Link>
           </li>
-          <li className="p-2 tracking-wider">
+          <li className="p-2 tracking-wider hover:text-[#84c0f6]">
             <Link href="/about">About</Link>
           </li>
-          <li className="p-2 tracking-wider">
+          <li className="p-2 tracking-wider hover:text-[#84c0f6]">
             <Link href="/blog">Blog</Link>
           </li>
-          <li className="p-2 tracking-wider">
+          <li className="p-2 tracking-wider hover:text-[#84c0f6]">
             <Link href="/contact">Contact</Link>
           </li>
         </ul>
