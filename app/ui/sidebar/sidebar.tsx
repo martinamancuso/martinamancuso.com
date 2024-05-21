@@ -30,18 +30,18 @@ export function Sidebar() {
         }`}
       >
         <ul>
-          <li className="p-2 tracking-wider hover:text-[#84c0f6]">
-            <Link href="/">Home</Link>
-          </li>
-          <li className="p-2 tracking-wider hover:text-[#84c0f6]">
-            <Link href="">About</Link>
-          </li>
-          <li className="p-2 tracking-wider hover:text-[#84c0f6]">
-            <Link href="">Blog</Link>
-          </li>
-          <li className="p-2 tracking-wider hover:text-[#84c0f6]">
-            <Link href="">Contact</Link>
-          </li>
+          <Link href="/">
+            <li className="p-2 tracking-wider hover:text-[#84c0f6]">Home</li>
+          </Link>
+          <Link href="/about">
+            <li className="p-2 tracking-wider hover:text-[#84c0f6]">About</li>
+          </Link>
+          <Link href="/blog">
+            <li className="p-2 tracking-wider hover:text-[#84c0f6]">Blog</li>
+          </Link>
+          <Link href="/contact">
+            <li className="p-2 tracking-wider hover:text-[#84c0f6]">Contact</li>
+          </Link>
         </ul>
       </nav>
       <Footer />
