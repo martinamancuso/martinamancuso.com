@@ -14,6 +14,13 @@ export function Sidebar() {
     setMenuOpen((prevValue: boolean) => !prevValue);
   }
 
+  const links = [
+    { label: "Home", path: "/" },
+    { label: "About", path: "/about" },
+    { label: "Blog", path: "/blog" },
+    { label: "Contact", path: "/contact" },
+  ];
+
   return (
     <aside className="fixed lg:border-r lg:border-slate-200 lg:relative w-full lg:w-80 lg:shrink-0 bg-white text-center lg:flex lg:flex-col lg:justify-around lg:items-center">
       <header className="h-12 flex items-center justify-between">
@@ -30,18 +37,14 @@ export function Sidebar() {
         }`}
       >
         <ul>
-          <Link href="/">
-            <li className="p-2 tracking-wider hover:text-[#84c0f6]">Home</li>
-          </Link>
-          <Link href="/about">
-            <li className="p-2 tracking-wider hover:text-[#84c0f6]">About</li>
-          </Link>
-          <Link href="/blog">
-            <li className="p-2 tracking-wider hover:text-[#84c0f6]">Blog</li>
-          </Link>
-          <Link href="/contact">
-            <li className="p-2 tracking-wider hover:text-[#84c0f6]">Contact</li>
-          </Link>
+          {links.map((link, index) => (
+            <li
+              className="p-2 tracking-wider hover:text-[#84c0f6]"
+              key={`navlink-${index}`}
+            >
+              <Link href={link.path}>{link.label}</Link>
+            </li>
+          ))}
         </ul>
       </nav>
       <Footer />
