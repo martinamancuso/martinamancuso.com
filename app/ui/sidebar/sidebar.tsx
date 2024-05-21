@@ -3,24 +3,28 @@
 import { useState } from "react";
 import { HamburgerMenuButton } from "../hamburger-menu/hamburger-menu-button";
 import style from "./sidebar.module.scss";
-import { useFonts } from "../../FontContext";
+import { Logo } from "../logo/logo";
+import { Footer } from "../footer/footer";
+import Link from "next/link";
 
 export function Sidebar() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const { dawning } = useFonts();
 
   function toggleMenuOpen() {
     setMenuOpen((prevValue: boolean) => !prevValue);
   }
 
+  const links = [
+    { label: "Home", path: "/" },
+    { label: "About", path: "/about" },
+    { label: "Blog", path: "/blog" },
+    { label: "Contact", path: "/contact" },
+  ];
+
   return (
-    <aside className="fixed border-r border-slate-200 lg:relative w-full lg:w-80 lg:shrink-0 bg-white text-center lg:flex lg:flex-col lg:justify-around lg:items-center">
+    <aside className="fixed lg:border-r lg:border-slate-200 lg:relative w-full lg:w-80 lg:shrink-0 bg-white text-center lg:flex lg:flex-col lg:justify-around lg:items-center">
       <header className="h-12 flex items-center justify-between">
-        <span
-          className={`${dawning.className} text-4xl block`}
-        >
-          Martina Mancuso
-        </span>
+        <Logo />
         <HamburgerMenuButton
           className="lg:hidden"
           isEnabled={menuOpen}
@@ -33,14 +37,17 @@ export function Sidebar() {
         }`}
       >
         <ul>
-          <li className="p-2">home</li>
-          <li className="p-2">about</li>
-          {/* <li className="p-2">Portfolio</li> */}
-          <li className="p-2">blog</li>
-          <li className="p-2">contact</li>
+          {links.map((link, index) => (
+            <li
+              className="p-2 tracking-wider hover:text-[#84c0f6]"
+              key={`navlink-${index}`}
+            >
+              <Link href={link.path}>{link.label}</Link>
+            </li>
+          ))}
         </ul>
       </nav>
-      <footer className="hidden lg:block">SOCIAL ICONS</footer>
+      <Footer />
     </aside>
   );
 }
