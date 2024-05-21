@@ -34,13 +34,13 @@ export function Sidebar() {
             <Link href="/">Home</Link>
           </li>
           <li className="p-2 tracking-wider hover:text-[#84c0f6]">
-            <Link href="/about">About</Link>
+            <Link href="">About</Link>
           </li>
           <li className="p-2 tracking-wider hover:text-[#84c0f6]">
-            <Link href="/blog">Blog</Link>
+            <Link href="">Blog</Link>
           </li>
           <li className="p-2 tracking-wider hover:text-[#84c0f6]">
-            <Link href="/contact">Contact</Link>
+            <Link href="">Contact</Link>
           </li>
         </ul>
       </nav>
