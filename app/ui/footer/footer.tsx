@@ -1,6 +1,6 @@
 import Image from "next/image";
-import github from "./social-icons/github.png";
-import linkedin from "./social-icons/linkedin.png";
+import githubIcon from "./social-icons/githubIcon.png";
+import linkedinIcon from "./social-icons/linkedinIcon.png";
 
 export function Footer() {
   return (
@@ -10,14 +10,14 @@ export function Footer() {
         rel="noopener noreferrer"
         href="https://www.linkedin.com/in/martinamancuso/"
       >
-        <Image src={linkedin} alt="linkedin logo" className="mr-3 hover:opacity-70" />
+        <Image src={linkedinIcon} alt="linkedin logo" className="mr-3 hover:opacity-70" />
       </a>
       <a
         target="_blank"
         rel="noopener noreferrer"
         href="https://github.com/martinamancuso"
       >
-        <Image src={github} alt="github logo" className="hover:opacity-70"/>
+        <Image src={githubIcon} alt="github logo" className="hover:opacity-70"/>
       </a>
     </div>
   );
