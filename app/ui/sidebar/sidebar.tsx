@@ -5,6 +5,7 @@ import { HamburgerMenuButton } from "../hamburger-menu/hamburger-menu-button";
 import style from "./sidebar.module.scss";
 import { Logo } from "../logo/logo";
 import { Footer } from "../footer/footer";
+import Link from "next/link";
 
 export function Sidebar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -29,11 +30,18 @@ export function Sidebar() {
         }`}
       >
         <ul>
-          <li className="p-2">home</li>
-          <li className="p-2">about</li>
-          {/* <li className="p-2">Portfolio</li> */}
-          <li className="p-2">blog</li>
-          <li className="p-2">contact</li>
+          <li className="p-2 tracking-wider">
+            <Link href="/">Home</Link>
+          </li>
+          <li className="p-2 tracking-wider">
+            <Link href="/about">About</Link>
+          </li>
+          <li className="p-2 tracking-wider">
+            <Link href="/blog">Blog</Link>
+          </li>
+          <li className="p-2 tracking-wider">
+            <Link href="/contact">Contact</Link>
+          </li>
         </ul>
       </nav>
       <Footer />
