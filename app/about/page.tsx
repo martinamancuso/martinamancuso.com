@@ -5,7 +5,7 @@ export default function About() {
 
   return (
     <>
-      <div className="flex flex-col w-full justify-around pb-7 lg:px-32">
+      <div className="flex flex-col w-full justify-around pb-7 px-2 lg:px-20">
         <p className="font-bold">About Me</p>
         <div className="py-6">
         <Image
