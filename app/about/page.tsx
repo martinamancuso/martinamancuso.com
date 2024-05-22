@@ -4,7 +4,7 @@ import MartinaMancusoPhoto from "./MartinaMancusoPhoto.jpg";
 export default function About() {
   return (
     <>
-      <div className="flex flex-col h-full w-full">
+      <div className="flex flex-col h-full w-full px-4">
         <p>About Me</p>
         <Image
           src={MartinaMancusoPhoto}
@@ -12,10 +12,9 @@ export default function About() {
           width={300}
           height={200}
         />
-        <p>Martina Mancuso</p>
         <p>Junior Full-Stack Developer</p>
         <hr />
-        <p className="text-justify">
+        <div className="text-justify">
           <p>
             «As you leave for Ithaca I hope your road is long, full of
             adventures, full of discovery.»
@@ -40,7 +39,7 @@ export default function About() {
             I am passionate about Communication and Psychology and I believe in
             "please" and "thank you".
           </p>
-        </p>
+        </div>
         <hr />
       </div>
     </>
