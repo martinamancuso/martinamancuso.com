@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Sidebar } from "./ui/sidebar/sidebar";
 
-const poppins = Poppins({ subsets: ["latin"], weight: ["400", "700"] });
+const poppins = Poppins({ subsets: ["latin"], weight: ["400", "500", "600", "700"] });
 
 export const metadata: Metadata = {
   title: "Martina Mancuso",
