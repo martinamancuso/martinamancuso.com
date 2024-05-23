@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div>
+    <div className="px-8">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat beatae et
       harum saepe sint possimus neque repudiandae! Quidem sequi dignissimos,
       facilis praesentium numquam aliquid dicta reiciendis delectus dolor eaque
