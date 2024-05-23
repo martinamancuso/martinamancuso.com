@@ -106,33 +106,14 @@ export default function About() {
           </p>
         </div>
       </div>
-      <div className="bg-white px-8 lg:px-20">
-        <div className="py-6 bg-white lg:flex justify-around">
-          <div className="font-semibold">
-            <p className="pt-7 pb-2">Tech Skills</p>
-            <div>
-              <ul className="font-normal">
-                {skills.map((skill, index) => (
-                  <li key={index} className="flex items-center pb-2">
-                    <Image
-                      src={liItemStar}
-                      alt="star"
-                      width={10}
-                      height={10}
-                      className="mr-1"
-                    />
-                    {skill}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-          <div className="py-6 lg:py-0 lg:flex lg:flex-col lg:justify-evenly">
+      {/* <div className="lg:flex lg:flex-col"> */}
+        <div className="bg-white px-8 lg:px-20">
+          <div className="py-6 bg-white lg:flex justify-around">
             <div className="font-semibold">
-              <p className="pb-2">Soft Skills</p>
+              <p className="pt-7 pb-2">Tech Skills</p>
               <div>
                 <ul className="font-normal">
-                  {softSkills.map((skill, index) => (
+                  {skills.map((skill, index) => (
                     <li key={index} className="flex items-center pb-2">
                       <Image
                         src={liItemStar}
@@ -147,12 +128,12 @@ export default function About() {
                 </ul>
               </div>
             </div>
-            <div>
+            <div className="py-6 lg:py-0 lg:flex lg:flex-col lg:justify-evenly">
               <div className="font-semibold">
-                <p className="pt-6 pb-2 lg:pt-0">Hobbies</p>
+                <p className="pb-2">Soft Skills</p>
                 <div>
                   <ul className="font-normal">
-                    {hobbies.map((skill, index) => (
+                    {softSkills.map((skill, index) => (
                       <li key={index} className="flex items-center pb-2">
                         <Image
                           src={liItemStar}
@@ -167,37 +148,38 @@ export default function About() {
                   </ul>
                 </div>
               </div>
+              <div>
+                <div className="font-semibold">
+                  <p className="pt-6 pb-2 lg:pt-0">Hobbies</p>
+                  <div>
+                    <ul className="font-normal">
+                      {hobbies.map((skill, index) => (
+                        <li key={index} className="flex items-center pb-2">
+                          <Image
+                            src={liItemStar}
+                            alt="star"
+                            width={10}
+                            height={10}
+                            className="mr-1"
+                          />
+                          {skill}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="px-8 lg:flex lg:flex-row justify-around">
-        <div className="py-10">
-          <p className="font-semibold py-6">Experiences</p>
-          <div>
-            <p className="font-medium pb-2">Develhope</p>
-            <p className="font-medium pb-1">Full-Stack Developer</p>
-            <ul>
-              {develhopeExperience.map((dev, index) => (
-                <li key={index} className="flex items-center pb-2">
-                  <Image
-                    src={liItemStar}
-                    alt="star"
-                    width={10}
-                    height={10}
-                    className="mr-1"
-                  />
-                  {dev}
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <p className="font-medium pt-6 pb-2">UniCredit</p>
+        <div className="px-8 lg:flex lg:flex-row justify-around">
+          <div className="py-10">
+            <p className="font-semibold py-6">Experiences</p>
             <div>
-              <p className="font-medium pb-1">AI Chatbot Analyst</p>
+              <p className="font-medium pb-2">Develhope</p>
+              <p className="font-medium pb-1">Full-Stack Developer</p>
               <ul>
-                {chatbotExperience.map((chat, index) => (
+                {develhopeExperience.map((dev, index) => (
                   <li key={index} className="flex items-center pb-2">
                     <Image
                       src={liItemStar}
@@ -206,17 +188,57 @@ export default function About() {
                       height={10}
                       className="mr-1"
                     />
-                    {chat}
+                    {dev}
                   </li>
                 ))}
               </ul>
             </div>
             <div>
-              <p className="font-medium pt-3 pb-1">
-                Customer Care & Sales Specialist
-              </p>
+              <p className="font-medium pt-6 pb-2">UniCredit</p>
+              <div>
+                <p className="font-medium pb-1">AI Chatbot Analyst</p>
+                <ul>
+                  {chatbotExperience.map((chat, index) => (
+                    <li key={index} className="flex items-center pb-2">
+                      <Image
+                        src={liItemStar}
+                        alt="star"
+                        width={10}
+                        height={10}
+                        className="mr-1"
+                      />
+                      {chat}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <p className="font-medium pt-3 pb-1">
+                  Customer Care & Sales Specialist
+                </p>
+                <ul>
+                  {customerCareExperience.map((customer, index) => (
+                    <li key={index} className="flex items-center pb-2">
+                      <Image
+                        src={liItemStar}
+                        alt="star"
+                        width={10}
+                        height={10}
+                        className="mr-1"
+                      />
+                      {customer}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p className="font-semibold lg:pt-16">Education</p>
+            <div>
+              <p className="font-medium pt-6 pb-2">Develhope</p>
               <ul>
-                {customerCareExperience.map((customer, index) => (
+                {develhopeEducation.map((devEdu, index) => (
                   <li key={index} className="flex items-center pb-2">
                     <Image
                       src={liItemStar}
@@ -225,85 +247,65 @@ export default function About() {
                       height={10}
                       className="mr-1"
                     />
-                    {customer}
+                    {devEdu}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <p className="font-medium pt-6 pb-2">Università di Pisa</p>
+              <ul>
+                {pisaEducation.map((pisaEdu, index) => (
+                  <li key={index} className="flex items-center pb-2">
+                    <Image
+                      src={liItemStar}
+                      alt="star"
+                      width={10}
+                      height={10}
+                      className="mr-1"
+                    />
+                    {pisaEdu}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <p className="font-medium pt-6 pb-2">Università di Milano</p>
+              <ul>
+                {milanoEducation.map((milEdu, index) => (
+                  <li key={index} className="flex items-center pb-2">
+                    <Image
+                      src={liItemStar}
+                      alt="star"
+                      width={10}
+                      height={10}
+                      className="mr-1"
+                    />
+                    {milEdu}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <p className="font-medium pt-6 pb-2">Università di Palermo</p>
+              <ul>
+                {palermoEducation.map((palEdu, index) => (
+                  <li key={index} className="flex items-center pb-2">
+                    <Image
+                      src={liItemStar}
+                      alt="star"
+                      width={10}
+                      height={10}
+                      className="mr-1"
+                    />
+                    {palEdu}
                   </li>
                 ))}
               </ul>
             </div>
           </div>
         </div>
-        <div>
-          <p className="font-semibold lg:pt-16">Education</p>
-          <div>
-            <p className="font-medium pt-6 pb-2">Develhope</p>
-            <ul>
-              {develhopeEducation.map((devEdu, index) => (
-                <li key={index} className="flex items-center pb-2">
-                  <Image
-                    src={liItemStar}
-                    alt="star"
-                    width={10}
-                    height={10}
-                    className="mr-1"
-                  />
-                  {devEdu}
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <p className="font-medium pt-6 pb-2">Università di Pisa</p>
-            <ul>
-              {pisaEducation.map((pisaEdu, index) => (
-                <li key={index} className="flex items-center pb-2">
-                  <Image
-                    src={liItemStar}
-                    alt="star"
-                    width={10}
-                    height={10}
-                    className="mr-1"
-                  />
-                  {pisaEdu}
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <p className="font-medium pt-6 pb-2">Università di Milano</p>
-            <ul>
-              {milanoEducation.map((milEdu, index) => (
-                <li key={index} className="flex items-center pb-2">
-                  <Image
-                    src={liItemStar}
-                    alt="star"
-                    width={10}
-                    height={10}
-                    className="mr-1"
-                  />
-                  {milEdu}
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <p className="font-medium pt-6 pb-2">Università di Palermo</p>
-            <ul>
-              {palermoEducation.map((palEdu, index) => (
-                <li key={index} className="flex items-center pb-2">
-                  <Image
-                    src={liItemStar}
-                    alt="star"
-                    width={10}
-                    height={10}
-                    className="mr-1"
-                  />
-                  {palEdu}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
       </div>
-    </div>
+    // </div>
   );
 }
