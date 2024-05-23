@@ -75,7 +75,7 @@ export default function About() {
         </div>
       </div>
       <div className="bg-white px-8 lg:px-20">
-        <div className="py-6 bg-white">
+        <div className="py-6 bg-white lg:flex justify-around">
           <div className="font-semibold">
             <p className="pb-2">Tech Skills</p>
             <div>
@@ -95,7 +95,7 @@ export default function About() {
               </ul>
             </div>
           </div>
-          <div className="py-6">
+          <div className="py-6 lg:py-0">
             <div className="font-semibold">
               <p className="pb-2">Soft Skills</p>
               <div>
