@@ -47,6 +47,20 @@ export default function About() {
     "Team working",
   ];
 
+  const develhopeEducation = [
+    "Daily live coding sessions and exercises",
+    "Group projects using Agile methodology",
+    "Self-study autonomy through Flipped Classroom learning methodology",
+  ];
+
+  const pisaEducation = ["Postgraduate Master Course in Marketing Management"];
+
+  const milanoEducation = ["Master's Degree in Communication Theories"];
+
+  const palermoEducation = [
+    "Bachelor's Degree in Communication for Media and Institutions",
+  ];
+
   return (
     <div className="flex flex-col w-full justify-around pb-7">
       <div className="px-8 lg:px-20">
@@ -219,7 +233,75 @@ export default function About() {
           </div>
         </div>
         <div>
-          <p className="font-semibold pb-6">Education</p>
+          <p className="font-semibold">Education</p>
+          <div>
+            <p className="font-medium pt-6 pb-2">Develhope</p>
+            <ul>
+              {develhopeEducation.map((devEdu, index) => (
+                <li key={index} className="flex items-center pb-2">
+                  <Image
+                    src={liItemStar}
+                    alt="star"
+                    width={10}
+                    height={10}
+                    className="mr-1"
+                  />
+                  {devEdu}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <p className="font-medium pt-6 pb-2">Università di Pisa</p>
+            <ul>
+              {pisaEducation.map((pisaEdu, index) => (
+                <li key={index} className="flex items-center pb-2">
+                  <Image
+                    src={liItemStar}
+                    alt="star"
+                    width={10}
+                    height={10}
+                    className="mr-1"
+                  />
+                  {pisaEdu}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <p className="font-medium pt-6 pb-2">Università di Milano</p>
+            <ul>
+              {milanoEducation.map((milEdu, index) => (
+                <li key={index} className="flex items-center pb-2">
+                  <Image
+                    src={liItemStar}
+                    alt="star"
+                    width={10}
+                    height={10}
+                    className="mr-1"
+                  />
+                  {milEdu}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <p className="font-medium pt-6 pb-2">Università di Palermo</p>
+            <ul>
+              {palermoEducation.map((palEdu, index) => (
+                <li key={index} className="flex items-center pb-2">
+                  <Image
+                    src={liItemStar}
+                    alt="star"
+                    width={10}
+                    height={10}
+                    className="mr-1"
+                  />
+                  {palEdu}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </div>
