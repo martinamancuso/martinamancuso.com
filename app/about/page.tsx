@@ -143,7 +143,6 @@ export default function About() {
           </div>
         </div>
       </div>
-      <hr />
     </div>
   );
 }
