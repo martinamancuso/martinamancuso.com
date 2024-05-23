@@ -50,7 +50,7 @@ export default function About() {
   const develhopeEducation = [
     "Daily live coding sessions and exercises",
     "Group projects using Agile methodology",
-    "Self-study autonomy through Flipped Classroom learning methodology",
+    "Self-study autonomy (Flipped Classroom learning methodology)",
   ];
 
   const pisaEducation = ["Postgraduate Master Course in Marketing Management"];
@@ -171,7 +171,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="px-8">
+      <div className="px-8 lg:flex lg:flex-row justify-around">
         <div className="py-10">
           <p className="font-semibold py-6">Experiences</p>
           <div>
@@ -233,7 +233,7 @@ export default function About() {
           </div>
         </div>
         <div>
-          <p className="font-semibold">Education</p>
+          <p className="font-semibold lg:pt-16">Education</p>
           <div>
             <p className="font-medium pt-6 pb-2">Develhope</p>
             <ul>
