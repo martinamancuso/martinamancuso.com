@@ -95,7 +95,7 @@ export default function About() {
               </ul>
             </div>
           </div>
-          <div className="py-6 lg:py-0">
+          <div className="py-6 lg:py-0 lg:flex lg:flex-col lg:justify-evenly">
             <div className="font-semibold">
               <p className="pb-2">Soft Skills</p>
               <div>
@@ -115,25 +115,25 @@ export default function About() {
                 </ul>
               </div>
             </div>
-          </div>
-          <div>
-            <div className="font-semibold">
-              <p className="pb-2">Hobbies</p>
-              <div>
-                <ul className="font-normal">
-                  {hobbies.map((skill, index) => (
-                    <li key={index} className="flex items-center pb-2">
-                      <Image
-                        src={liItemStar}
-                        alt="star"
-                        width={10}
-                        height={10}
-                        className="mr-1"
-                      />
-                      {skill}
-                    </li>
-                  ))}
-                </ul>
+            <div>
+              <div className="font-semibold">
+                <p className="pt-6 pb-2 lg:pt-0">Hobbies</p>
+                <div>
+                  <ul className="font-normal">
+                    {hobbies.map((skill, index) => (
+                      <li key={index} className="flex items-center pb-2">
+                        <Image
+                          src={liItemStar}
+                          alt="star"
+                          width={10}
+                          height={10}
+                          className="mr-1"
+                        />
+                        {skill}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
