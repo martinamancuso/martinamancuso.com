@@ -31,8 +31,8 @@ export default function About() {
 
   return (
     <>
-      <div className="flex flex-col w-full justify-around pb-7 lg:px-20">
-        <div className="px-8">
+      <div className="flex flex-col w-full justify-around pb-7">
+        <div className="px-8 lg:px-20">
           <p className="font-bold">About Me</p>
           <div className="py-6">
             <Image
@@ -78,7 +78,7 @@ export default function About() {
           </div>
         </div>
         <hr />
-        <div className="bg-white px-8">
+        <div className="bg-white px-8 lg:px-20">
           <div className="py-6 bg-white">
             <div className="font-semibold">
               <p className="pb-2">Tech Skills</p>
