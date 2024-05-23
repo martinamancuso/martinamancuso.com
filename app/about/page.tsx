@@ -29,6 +29,24 @@ export default function About() {
 
   const hobbies = ["Technology", "Reading", "Writing"];
 
+  const develhopeExperience = [
+    "Development of a Finance platform",
+    "Design and development of a Gaming portal",
+    "Human Development sessions",
+  ];
+
+  const chatbotExperience = [
+    "Conversations analysis and testing",
+    "Chatbot intents design and maintenance",
+    "Data extraction and reporting",
+  ];
+
+  const customerCareExperience = [
+    "Customer problems solving",
+    "Customer needs interception",
+    "Team working",
+  ];
+
   return (
     <div className="flex flex-col w-full justify-around pb-7">
       <div className="px-8 lg:px-20">
@@ -47,7 +65,7 @@ export default function About() {
           <p className="font-medium">Junior Full-Stack Developer</p>
         </div>
         <hr />
-        <div className="text-justify py-6 flex flex-col gap-5">
+        <div className="text-justify pt-6 pb-12 flex flex-col gap-5">
           <p>
             «As you leave for Ithaca I hope your road is long, full of
             adventures, full of discovery.»
@@ -77,7 +95,7 @@ export default function About() {
       <div className="bg-white px-8 lg:px-20">
         <div className="py-6 bg-white lg:flex justify-around">
           <div className="font-semibold">
-            <p className="pb-2">Tech Skills</p>
+            <p className="pt-7 pb-2">Tech Skills</p>
             <div>
               <ul className="font-normal">
                 {skills.map((skill, index) => (
@@ -137,6 +155,71 @@ export default function About() {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="px-8">
+        <div className="py-10">
+          <p className="font-semibold py-6">Experiences</p>
+          <div>
+            <p className="font-medium pb-2">Develhope</p>
+            <p className="font-medium pb-1">Full-Stack Developer</p>
+            <ul>
+              {develhopeExperience.map((dev, index) => (
+                <li key={index} className="flex items-center pb-2">
+                  <Image
+                    src={liItemStar}
+                    alt="star"
+                    width={10}
+                    height={10}
+                    className="mr-1"
+                  />
+                  {dev}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <p className="font-medium pt-6 pb-2">UniCredit</p>
+            <div>
+              <p className="font-medium pb-1">AI Chatbot Analyst</p>
+              <ul>
+                {chatbotExperience.map((chat, index) => (
+                  <li key={index} className="flex items-center pb-2">
+                    <Image
+                      src={liItemStar}
+                      alt="star"
+                      width={10}
+                      height={10}
+                      className="mr-1"
+                    />
+                    {chat}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <p className="font-medium pt-3 pb-1">
+                Customer Care & Sales Specialist
+              </p>
+              <ul>
+                {customerCareExperience.map((customer, index) => (
+                  <li key={index} className="flex items-center pb-2">
+                    <Image
+                      src={liItemStar}
+                      alt="star"
+                      width={10}
+                      height={10}
+                      className="mr-1"
+                    />
+                    {customer}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p className="font-semibold pb-6">Education</p>
         </div>
       </div>
     </div>
