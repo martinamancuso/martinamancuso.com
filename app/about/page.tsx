@@ -30,7 +30,6 @@ export default function About() {
   const hobbies = ["Technology", "Reading", "Writing"];
 
   return (
-    <>
       <div className="flex flex-col w-full justify-around pb-7">
         <div className="px-8 lg:px-20">
           <p className="font-bold">About Me</p>
@@ -145,6 +144,5 @@ export default function About() {
         </div>
         <hr />
       </div>
-    </>
   );
 }
