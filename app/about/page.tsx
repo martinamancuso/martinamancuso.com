@@ -78,7 +78,6 @@ export default function About() {
           </p>
         </div>
       </div>
-      <hr />
       <div className="bg-white px-8 lg:px-20">
         <div className="py-6 bg-white">
           <div className="font-semibold">
