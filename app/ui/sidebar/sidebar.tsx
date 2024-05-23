@@ -22,7 +22,7 @@ export function Sidebar() {
   ];
 
   return (
-    <aside className="fixed lg:border-r lg:border-slate-200 lg:relative w-full lg:w-80 lg:shrink-0 bg-white text-center lg:flex lg:flex-col lg:justify-around lg:items-center">
+    <aside className="fixed border-b border-slate-200 lg:border-r lg:relative w-full lg:w-80 lg:shrink-0 bg-white text-center lg:flex lg:flex-col lg:justify-around lg:items-center">
       <header className="h-12 flex items-center justify-between">
         <Logo />
         <HamburgerMenuButton
