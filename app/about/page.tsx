@@ -182,7 +182,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="px-8 lg:flex lg:flex-row justify-around">
+      <div className="px-8 pb-7 lg:flex lg:flex-row justify-around">
         <div className="py-10">
           <p className="font-semibold py-6">Experiences</p>
           <div>
