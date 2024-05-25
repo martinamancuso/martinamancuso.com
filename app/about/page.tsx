@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import MartinaMancusoPhoto from "./MartinaMancusoPhoto.jpg";
 import liItemStar from "./li-item-star.png";
@@ -60,6 +62,15 @@ export default function About() {
   const palermoEducation = [
     "Bachelor's Degree in Communication for Media and Institutions",
   ];
+
+  function downloadCv() {
+    const link = document.createElement("a");
+    link.href = "/Martina_Mancuso_Resume.pdf";
+    link.download = "Martina_Mancuso_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
 
   return (
     <div className="flex flex-col w-full justify-around pb-7">
@@ -308,7 +319,10 @@ export default function About() {
         <hr />
       </div>
       <div className="px-8 w-full h-auto flex justify-center items-center">
-        <button className="w-40 h-20 border border-slate-200 rounded-2xl bg-[#84c0f6] text-white font-medium hover:opacity-70">
+        <button
+          onClick={downloadCv}
+          className="w-36 h-12 border border-slate-200 rounded-xl bg-[#84c0f6] text-white font-medium hover:opacity-70"
+        >
           Download CV
         </button>
       </div>
