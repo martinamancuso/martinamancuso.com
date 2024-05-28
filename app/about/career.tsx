@@ -37,11 +37,11 @@ export function Career() {
   return (
     <>
       <div className="py-10">
-        <p className="font-semibold py-6">Experiences</p>
+        <p className="text-xl font-bold py-6">Experiences</p>
         <div>
-          <p className="font-medium pb-2">Develhope</p>
-          <p className="font-medium pb-1">Full-Stack Developer</p>
-          <ul>
+          <p className="font-semibold text-[16px] pb-2">Develhope</p>
+          <p className="text-sm pb-1">Full-Stack Developer</p>
+          <ul className="text-[#767676] text-sm">
             {develhopeExperience.map((dev, index) => (
               <li key={index} className="flex items-center pb-2">
                 <Image
@@ -57,10 +57,10 @@ export function Career() {
           </ul>
         </div>
         <div>
-          <p className="font-medium pt-6 pb-2">UniCredit</p>
+          <p className="font-semibold text-[16px] pt-6 pb-2">UniCredit</p>
           <div>
-            <p className="font-medium pb-1">AI Chatbot Analyst</p>
-            <ul>
+            <p className="text-sm pb-1">AI Chatbot Analyst</p>
+            <ul className="text-[#767676] text-sm">
               {chatbotExperience.map((chat, index) => (
                 <li key={index} className="flex items-center pb-2">
                   <Image
@@ -76,10 +76,10 @@ export function Career() {
             </ul>
           </div>
           <div>
-            <p className="font-medium pt-3 pb-1">
+            <p className="text-sm pt-3 pb-1">
               Customer Care & Sales Specialist
             </p>
-            <ul>
+            <ul className="text-[#767676] text-sm">
               {customerCareExperience.map((customer, index) => (
                 <li key={index} className="flex items-center pb-2">
                   <Image
@@ -97,10 +97,10 @@ export function Career() {
         </div>
       </div>
       <div>
-        <p className="font-semibold lg:pt-16">Education</p>
+        <p className="text-xl font-bold lg:pt-16">Education</p>
         <div>
-          <p className="font-medium pt-6 pb-2">Develhope</p>
-          <ul>
+          <p className="font-semibold text-[16px] pt-6 pb-2">Develhope</p>
+          <ul className="text-[#767676] text-sm">
             {develhopeEducation.map((devEdu, index) => (
               <li key={index} className="flex items-center pb-2">
                 <Image
@@ -116,8 +116,8 @@ export function Career() {
           </ul>
         </div>
         <div>
-          <p className="font-medium pt-6 pb-2">Università di Pisa</p>
-          <ul>
+          <p className="font-semibold text-[16px] pt-6 pb-2">Università di Pisa</p>
+          <ul className="text-[#767676] text-sm">
             {pisaEducation.map((pisaEdu, index) => (
               <li key={index} className="flex items-center pb-2">
                 <Image
@@ -133,8 +133,8 @@ export function Career() {
           </ul>
         </div>
         <div>
-          <p className="font-medium pt-6 pb-2">Università di Milano</p>
-          <ul>
+          <p className="font-semibold text-[16px] pt-6 pb-2">Università di Milano</p>
+          <ul className="text-[#767676] text-sm">
             {milanoEducation.map((milEdu, index) => (
               <li key={index} className="flex items-center pb-2">
                 <Image
@@ -150,8 +150,8 @@ export function Career() {
           </ul>
         </div>
         <div>
-          <p className="font-medium pt-6 pb-2">Università di Palermo</p>
-          <ul>
+          <p className="font-semibold text-[16px] pt-6 pb-2">Università di Palermo</p>
+          <ul className="text-[#767676] text-sm">
             {palermoEducation.map((palEdu, index) => (
               <li key={index} className="flex items-center pb-2">
                 <Image

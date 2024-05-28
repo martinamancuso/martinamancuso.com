@@ -14,7 +14,7 @@ export function Introduction() {
           }}
           className="pb-2"
         />
-        <p className="font-semibold text-[22px]">Martina Mancuso</p>
+        <p className="font-bold text-[22px]">Martina Mancuso</p>
         <p className="text-[#767676] text-sm">Junior Full-Stack Developer</p>
       </div>
       <hr />
