@@ -9,7 +9,7 @@ export default function About() {
   return (
     <div className="flex flex-col w-full justify-around pb-7">
       <div className="px-8 lg:px-20">
-        <p className="font-bold text-3xl">About Me</p>
+        <p className="font-extrabold text-3xl">About Me</p>
         <Introduction />
       </div>
       <div className="bg-white px-8 lg:px-20">

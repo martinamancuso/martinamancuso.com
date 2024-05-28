@@ -31,9 +31,9 @@ export function Skills() {
     <>
       <div className="py-6 lg:flex justify-around">
         <div className="font-semibold">
-          <p className="pt-7 pb-2">Tech Skills</p>
+          <p className="text-xl pt-7 pb-2">Tech Skills</p>
           <div>
-            <ul className="font-normal">
+            <ul className="font-normal text-sm text-[#767676]">
               {skills.map((skill, index) => (
                 <li key={index} className="flex items-center pb-2">
                   <Image
@@ -51,9 +51,9 @@ export function Skills() {
         </div>
         <div className="py-6 lg:py-0 lg:flex lg:flex-col lg:justify-evenly">
           <div className="font-semibold">
-            <p className="pb-2">Soft Skills</p>
+            <p className="text-xl pb-2">Soft Skills</p>
             <div>
-              <ul className="font-normal">
+              <ul className="font-normal text-sm text-[#767676]">
                 {softSkills.map((skill, index) => (
                   <li key={index} className="flex items-center pb-2">
                     <Image
@@ -71,9 +71,9 @@ export function Skills() {
           </div>
           <div>
             <div className="font-semibold">
-              <p className="pt-6 pb-2 lg:pt-0">Hobbies</p>
+              <p className="text-xl pt-6 pb-2 lg:pt-0">Hobbies</p>
               <div>
-                <ul className="font-normal">
+                <ul className="font-normal text-sm text-[#767676]">
                   {hobbies.map((skill, index) => (
                     <li key={index} className="flex items-center pb-2">
                       <Image

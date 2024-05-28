@@ -14,11 +14,11 @@ export function Introduction() {
           }}
           className="pb-2"
         />
-        <p className="font-medium">Martina Mancuso</p>
-        <p className="font-medium">Junior Full-Stack Developer</p>
+        <p className="font-semibold text-[22px]">Martina Mancuso</p>
+        <p className="text-[#767676] text-sm">Junior Full-Stack Developer</p>
       </div>
       <hr />
-      <div className="text-justify pt-6 pb-12 flex flex-col gap-5">
+      <div className="text-[#767676] text-sm text-justify pt-6 pb-12 flex flex-col gap-5">
         <p>
           «As you leave for Ithaca I hope your road is long, full of adventures,
           full of discovery.»
