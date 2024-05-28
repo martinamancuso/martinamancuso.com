@@ -3,34 +3,9 @@
 import Image from "next/image";
 import liItemStar from "./li-item-star.png";
 import { Introduction } from "./introduction";
+import { Skills } from "./skills";
 
 export default function About() {
-  const skills = [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "TypeScript",
-    "React",
-    "Node.js and NPM",
-    "Git Versioning System",
-    "REST API",
-    "SQL and PostgreSQL",
-    "Agile Methodology",
-    "Google Dialogflow",
-    "Draw.io",
-    "Tailwind",
-  ];
-
-  const softSkills = [
-    "Time Management",
-    "Effective Communication",
-    "Perseverance",
-    "Problem Solving",
-    "Creativity",
-  ];
-
-  const hobbies = ["Technology", "Reading", "Writing"];
-
   const develhopeExperience = [
     "Development of a Finance platform",
     "Design and development of a Gaming portal",
@@ -79,71 +54,7 @@ export default function About() {
         <Introduction />
       </div>
       <div className="bg-white px-8 lg:px-20">
-        {/* SKILLS - START */}
-        <div className="py-6 lg:flex justify-around">
-          <div className="font-semibold">
-            <p className="pt-7 pb-2">Tech Skills</p>
-            <div>
-              <ul className="font-normal">
-                {skills.map((skill, index) => (
-                  <li key={index} className="flex items-center pb-2">
-                    <Image
-                      src={liItemStar}
-                      alt="star"
-                      width={10}
-                      height={10}
-                      className="mr-1"
-                    />
-                    {skill}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-          <div className="py-6 lg:py-0 lg:flex lg:flex-col lg:justify-evenly">
-            <div className="font-semibold">
-              <p className="pb-2">Soft Skills</p>
-              <div>
-                <ul className="font-normal">
-                  {softSkills.map((skill, index) => (
-                    <li key={index} className="flex items-center pb-2">
-                      <Image
-                        src={liItemStar}
-                        alt="star"
-                        width={10}
-                        height={10}
-                        className="mr-1"
-                      />
-                      {skill}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-            <div>
-              <div className="font-semibold">
-                <p className="pt-6 pb-2 lg:pt-0">Hobbies</p>
-                <div>
-                  <ul className="font-normal">
-                    {hobbies.map((skill, index) => (
-                      <li key={index} className="flex items-center pb-2">
-                        <Image
-                          src={liItemStar}
-                          alt="star"
-                          width={10}
-                          height={10}
-                          className="mr-1"
-                        />
-                        {skill}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* SKILLS - END */}
+        <Skills />
       </div>
       <div className="px-8 pb-7 lg:flex lg:flex-row justify-around">
         {/* CAREER - START */}

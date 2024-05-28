@@ -3,7 +3,7 @@ import MartinaMancusoPhoto from "./MartinaMancusoPhoto.jpg";
 
 export function Introduction() {
   return (
-    <div>
+    <>
       <div className="py-6">
         <Image
           src={MartinaMancusoPhoto}
@@ -44,6 +44,6 @@ export function Introduction() {
           "please" and "thank you".
         </p>
       </div>
-    </div>
+    </>
   );
 }
