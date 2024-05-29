@@ -27,7 +27,7 @@ export default function About() {
       <div className="px-8 pb-7 lg:flex lg:flex-row justify-around">
         <Career />
       </div>
-      <div className="px-20 pb-10">
+      <div className="px-20 pb-16">
         <hr />
       </div>
       <div className="px-8 w-full h-auto flex justify-center items-center">
