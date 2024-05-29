@@ -34,137 +34,71 @@ export function Career() {
     "Bachelor's Degree in Communication for Media and Institutions",
   ];
 
+  function renderList(experiences: String[]) {
+    return (
+      <ul className="text-[#767676] text-sm">
+        {experiences.map((experience, index) => (
+          <li key={index} className="flex items-center pb-2">
+            <Image
+              src={liItemStar}
+              alt="star"
+              width={10}
+              height={10}
+              className="mr-1"
+            />
+            {experience}
+          </li>
+        ))}
+      </ul>
+    );
+  }
+
   return (
     <>
       <div className="py-10">
         <p className="text-xl font-bold py-6">Experiences</p>
         <div>
-          <p className="font-semibold text-[16px] pb-2">Develhope</p>
+          <p className="font-semibold text-base pb-2">Develhope</p>
           <p className="text-sm pb-1">Full-Stack Developer</p>
-          <ul className="text-[#767676] text-sm">
-            {develhopeExperience.map((dev, index) => (
-              <li key={index} className="flex items-center pb-2">
-                <Image
-                  src={liItemStar}
-                  alt="star"
-                  width={10}
-                  height={10}
-                  className="mr-1"
-                />
-                {dev}
-              </li>
-            ))}
-          </ul>
+          {renderList(develhopeExperience)}
         </div>
         <div>
-          <p className="font-semibold text-[16px] pt-6 pb-2">UniCredit</p>
+          <p className="font-semibold text-base pt-6 pb-2">UniCredit</p>
           <div>
             <p className="text-sm pb-1">AI Chatbot Analyst</p>
-            <ul className="text-[#767676] text-sm">
-              {chatbotExperience.map((chat, index) => (
-                <li key={index} className="flex items-center pb-2">
-                  <Image
-                    src={liItemStar}
-                    alt="star"
-                    width={10}
-                    height={10}
-                    className="mr-1"
-                  />
-                  {chat}
-                </li>
-              ))}
-            </ul>
+            {renderList(chatbotExperience)}
           </div>
           <div>
             <p className="text-sm pt-3 pb-1">
               Customer Care & Sales Specialist
             </p>
-            <ul className="text-[#767676] text-sm">
-              {customerCareExperience.map((customer, index) => (
-                <li key={index} className="flex items-center pb-2">
-                  <Image
-                    src={liItemStar}
-                    alt="star"
-                    width={10}
-                    height={10}
-                    className="mr-1"
-                  />
-                  {customer}
-                </li>
-              ))}
-            </ul>
+            {renderList(customerCareExperience)}
           </div>
         </div>
       </div>
       <div>
         <p className="text-xl font-bold lg:pt-16">Education</p>
         <div>
-          <p className="font-semibold text-[16px] pt-6 pb-2">Develhope</p>
-          <ul className="text-[#767676] text-sm">
-            {develhopeEducation.map((devEdu, index) => (
-              <li key={index} className="flex items-center pb-2">
-                <Image
-                  src={liItemStar}
-                  alt="star"
-                  width={10}
-                  height={10}
-                  className="mr-1"
-                />
-                {devEdu}
-              </li>
-            ))}
-          </ul>
+          <p className="font-semibold text-base pt-6 pb-2">Develhope</p>
+          {renderList(develhopeEducation)}
         </div>
         <div>
-          <p className="font-semibold text-[16px] pt-6 pb-2">Università di Pisa</p>
-          <ul className="text-[#767676] text-sm">
-            {pisaEducation.map((pisaEdu, index) => (
-              <li key={index} className="flex items-center pb-2">
-                <Image
-                  src={liItemStar}
-                  alt="star"
-                  width={10}
-                  height={10}
-                  className="mr-1"
-                />
-                {pisaEdu}
-              </li>
-            ))}
-          </ul>
+          <p className="font-semibold text-base pt-6 pb-2">
+            Università di Pisa
+          </p>
+          {renderList(pisaEducation)}
         </div>
         <div>
-          <p className="font-semibold text-[16px] pt-6 pb-2">Università di Milano</p>
-          <ul className="text-[#767676] text-sm">
-            {milanoEducation.map((milEdu, index) => (
-              <li key={index} className="flex items-center pb-2">
-                <Image
-                  src={liItemStar}
-                  alt="star"
-                  width={10}
-                  height={10}
-                  className="mr-1"
-                />
-                {milEdu}
-              </li>
-            ))}
-          </ul>
+          <p className="font-semibold text-base pt-6 pb-2">
+            Università di Milano
+          </p>
+          {renderList(milanoEducation)}
         </div>
         <div>
-          <p className="font-semibold text-[16px] pt-6 pb-2">Università di Palermo</p>
-          <ul className="text-[#767676] text-sm">
-            {palermoEducation.map((palEdu, index) => (
-              <li key={index} className="flex items-center pb-2">
-                <Image
-                  src={liItemStar}
-                  alt="star"
-                  width={10}
-                  height={10}
-                  className="mr-1"
-                />
-                {palEdu}
-              </li>
-            ))}
-          </ul>
+          <p className="font-semibold text-base pt-6 pb-2">
+            Università di Palermo
+          </p>
+          {renderList(palermoEducation)}
         </div>
       </div>
     </>

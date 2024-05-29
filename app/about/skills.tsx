@@ -2,7 +2,7 @@ import Image from "next/image";
 import liItemStar from "./li-item-star.png";
 
 export function Skills() {
-  const skills = [
+  const techSkills = [
     "HTML",
     "CSS",
     "JavaScript",
@@ -27,66 +27,43 @@ export function Skills() {
   ];
 
   const hobbies = ["Technology", "Reading", "Writing"];
+
+  function renderList(skills: String[]) {
+    return (
+      <ul className="font-normal text-sm">
+        {skills.map((skill, index) => (
+          <li key={index} className="flex items-center pb-2">
+            <Image
+              src={liItemStar}
+              alt="star"
+              width={10}
+              height={10}
+              className="mr-1"
+            />
+            {skill}
+          </li>
+        ))}
+      </ul>
+    );
+  }
+
   return (
     <>
       <div className="py-6 lg:flex justify-around">
         <div className="font-semibold">
           <p className="text-xl font-bold pt-7 pb-2">Tech Skills</p>
-          <div>
-            <ul className="font-normal text-sm">
-              {skills.map((skill, index) => (
-                <li key={index} className="flex items-center pb-2">
-                  <Image
-                    src={liItemStar}
-                    alt="star"
-                    width={10}
-                    height={10}
-                    className="mr-1"
-                  />
-                  {skill}
-                </li>
-              ))}
-            </ul>
-          </div>
+          <div>{renderList(techSkills)}</div>
         </div>
         <div className="py-6 lg:py-0 lg:flex lg:flex-col lg:justify-evenly">
           <div className="font-semibold">
             <p className="text-xl font-bold pb-2">Soft Skills</p>
-            <div>
-              <ul className="font-normal text-sm">
-                {softSkills.map((skill, index) => (
-                  <li key={index} className="flex items-center pb-2">
-                    <Image
-                      src={liItemStar}
-                      alt="star"
-                      width={10}
-                      height={10}
-                      className="mr-1"
-                    />
-                    {skill}
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <div>{renderList(softSkills)}</div>
           </div>
           <div>
             <div className="font-semibold">
               <p className="text-xl font-bold pt-6 pb-2 lg:pt-0">Hobbies</p>
               <div>
-                <ul className="font-normal text-sm">
-                  {hobbies.map((skill, index) => (
-                    <li key={index} className="flex items-center pb-2">
-                      <Image
-                        src={liItemStar}
-                        alt="star"
-                        width={10}
-                        height={10}
-                        className="mr-1"
-                      />
-                      {skill}
-                    </li>
-                  ))}
-                </ul>
+                <div>{renderList(hobbies)}</div>
               </div>
             </div>
           </div>
