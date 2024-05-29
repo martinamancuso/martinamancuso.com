@@ -16,7 +16,7 @@ export function Introduction() {
         <p className="font-bold text-xl">Martina Mancuso</p>
         <p className="text-[#767676] text-sm pb-5">Junior Full-Stack Developer</p>
       <hr />
-      <div className="text-[#767676] text-sm text-justify mt-7 pb-7 flex flex-col gap-3">
+      <div className="text-[#767676] text-sm text-justify mt-7 pb-24 flex flex-col gap-3">
         <p>
           «As you leave for Ithaca I hope your road is long, full of adventures,
           full of discovery.»

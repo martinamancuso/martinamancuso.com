@@ -51,7 +51,7 @@ export function Skills() {
     <>
       <div className="py-6 lg:flex justify-around">
         <div className="font-semibold">
-          <p className="text-xl font-bold pt-7 pb-2">Tech Skills</p>
+          <p className="text-xl font-bold pt-24 pb-2">Tech Skills</p>
           <div>{renderList(techSkills)}</div>
         </div>
         <div className="py-6 lg:py-0 lg:flex lg:flex-col lg:justify-evenly">
@@ -60,7 +60,7 @@ export function Skills() {
             <div>{renderList(softSkills)}</div>
           </div>
           <div>
-            <div className="font-semibold">
+            <div className="font-semibold pb-12">
               <p className="text-xl font-bold pt-6 pb-2 lg:pt-0">Hobbies</p>
               <div>
                 <div>{renderList(hobbies)}</div>
