@@ -77,7 +77,7 @@ export function Career() {
         </div>
       </div>
       <div>
-        <p className="text-xl font-bold mb-10 lg:pt-0">Education</p>
+        <p className="text-xl font-bold mb-10">Education</p>
         <div className="mb-10">
           <p className="font-semibold text-base pb-2">Develhope</p>
           {renderList(develhopeEducation)}
