@@ -1,18 +1,30 @@
 import Image from "next/image";
 import MartinaMancusoPhoto from "./MartinaMancusoPhoto.jpg";
+import MartinaMancusoPhotoDesktop from "./MartinaMancusoPhotoDesktop.jpg";
 
 export function Introduction() {
   return (
     <>
-      <Image
-        src={MartinaMancusoPhoto}
-        alt="martina mancuso photo"
-        style={{
-          width: "100%",
-          height: "auto",
-        }}
-        className="mb-9"
-      />
+      <div className="mb-9">
+        <Image
+          src={MartinaMancusoPhoto}
+          alt="martina mancuso photo"
+          style={{
+            width: "100%",
+            height: "auto",
+          }}
+          className="md:hidden"
+        />
+        <Image
+          src={MartinaMancusoPhotoDesktop}
+          alt="martina mancuso photo"
+          style={{
+            width: "100%",
+            height: "auto",
+          }}
+          className="hidden md:block"
+        />
+      </div>
       <p className="font-bold text-xl">Martina Mancuso</p>
       <p className="text-[#767676] text-sm pb-5">Junior Full-Stack Developer</p>
       <hr />
