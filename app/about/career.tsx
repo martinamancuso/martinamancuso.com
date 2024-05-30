@@ -55,17 +55,17 @@ export function Career() {
 
   return (
     <>
-      <div className="py-10">
-        <p className="text-xl font-bold py-6">Experiences</p>
-        <div>
-          <p className="font-semibold text-base pb-2">Develhope</p>
-          <p className="text-sm pb-1">Full-Stack Developer</p>
+      <div className="pt-24 mb-14 lg:pt-0">
+        <p className="text-xl font-bold mb-10">Experiences</p>
+        <div className="mb-10">
+          <p className="font-semibold text-base mb-2">Develhope</p>
+          <p className="text-sm mb-1">Full-Stack Developer</p>
           {renderList(develhopeExperience)}
         </div>
         <div>
-          <p className="font-semibold text-base pt-6 pb-2">UniCredit</p>
+          <p className="font-semibold text-base mb-2">UniCredit</p>
           <div>
-            <p className="text-sm pb-1">AI Chatbot Analyst</p>
+            <p className="text-sm mb-1">AI Chatbot Analyst</p>
             {renderList(chatbotExperience)}
           </div>
           <div>
@@ -77,25 +77,25 @@ export function Career() {
         </div>
       </div>
       <div>
-        <p className="text-xl font-bold lg:pt-16">Education</p>
-        <div>
-          <p className="font-semibold text-base pt-6 pb-2">Develhope</p>
+        <p className="text-xl font-bold mb-10">Education</p>
+        <div className="mb-10">
+          <p className="font-semibold text-base pb-2">Develhope</p>
           {renderList(develhopeEducation)}
         </div>
-        <div>
-          <p className="font-semibold text-base pt-6 pb-2">
+        <div className="mb-10">
+          <p className="font-semibold text-base pb-2">
             Università di Pisa
           </p>
           {renderList(pisaEducation)}
         </div>
-        <div>
-          <p className="font-semibold text-base pt-6 pb-2">
+        <div className="mb-10">
+          <p className="font-semibold text-base pb-2">
             Università di Milano
           </p>
           {renderList(milanoEducation)}
         </div>
-        <div>
-          <p className="font-semibold text-base pt-6 pb-2">
+        <div className="mb-10">
+          <p className="font-semibold text-base pb-2">
             Università di Palermo
           </p>
           {renderList(palermoEducation)}
