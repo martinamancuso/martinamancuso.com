@@ -4,17 +4,17 @@ import MartinaMancusoPhoto from "./MartinaMancusoPhoto.jpg";
 export function Introduction() {
   return (
     <>
-        <Image
-          src={MartinaMancusoPhoto}
-          alt="martina mancuso photo"
-          style={{
-            width: "100%",
-            height: "auto",
-          }}
-          className="mb-9"
-        />
-        <p className="font-bold text-xl">Martina Mancuso</p>
-        <p className="text-[#767676] text-sm pb-5">Junior Full-Stack Developer</p>
+      <Image
+        src={MartinaMancusoPhoto}
+        alt="martina mancuso photo"
+        style={{
+          width: "100%",
+          height: "auto",
+        }}
+        className="mb-9"
+      />
+      <p className="font-bold text-xl">Martina Mancuso</p>
+      <p className="text-[#767676] text-sm pb-5">Junior Full-Stack Developer</p>
       <hr />
       <div className="text-[#767676] text-sm text-justify mt-7 pb-24 flex flex-col gap-3">
         <p>
@@ -41,6 +41,9 @@ export function Introduction() {
           I am passionate about Communication and Psychology and I believe in
           "please" and "thank you".
         </p>
+        <div className="pt-4">
+          <hr />
+        </div>
       </div>
     </>
   );
