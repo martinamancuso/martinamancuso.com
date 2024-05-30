@@ -49,7 +49,7 @@ export function Skills() {
 
   return (
     <>
-      <div className="py-6 lg:flex justify-around">
+      <div className="py-6 justify-around lg:py-24 lg:flex">
         <div className="font-semibold mb-14">
           <p className="text-xl font-bold pt-24 mb-10">Tech Skills</p>
           <div>{renderList(techSkills)}</div>
