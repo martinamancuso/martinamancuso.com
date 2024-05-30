@@ -22,7 +22,7 @@ export default function RootLayout({
         <body className={`${poppins.className}`}>
           <div className="lg:flex lg:w-screen lg:h-screen">
             <Sidebar />
-            <main className="pt-24 pb-12 flex-grow overflow-auto flex flex-col items-center">
+            <main className="pt-24 pb-12 flex-grow overflow-auto">
               {children}
             </main>
           </div>
