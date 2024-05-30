@@ -38,13 +38,13 @@ export function Career() {
     return (
       <ul className="text-[#767676] text-sm">
         {experiences.map((experience, index) => (
-          <li key={index} className="flex items-center pb-2">
+          <li key={index} className="flex items-start pb-2">
             <Image
               src={liItemStar}
               alt="star"
               width={10}
               height={10}
-              className="mr-2"
+              className="mr-2 mt-1"
             />
             {experience}
           </li>
