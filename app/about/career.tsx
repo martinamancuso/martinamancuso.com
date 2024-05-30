@@ -44,7 +44,7 @@ export function Career() {
               alt="star"
               width={10}
               height={10}
-              className="mr-1"
+              className="mr-2"
             />
             {experience}
           </li>
@@ -54,50 +54,50 @@ export function Career() {
   }
 
   return (
-    <div className="pb-7 lg:pt-24 lg:flex lg:flex-row justify-around">
-      <div className="pt-24 mb-14 lg:pt-0">
+    <div className="pt-24 pb-12 flex flex-col lg:flex-row gap-y-14 border-[#dfdfdf] border-b mb-12">
+      <div className="lg:w-1/2">
         <p className="text-xl font-bold mb-10">Experiences</p>
         <div className="mb-10">
-          <p className="font-semibold text-base mb-2">Develhope</p>
-          <p className="text-sm mb-1">Full-Stack Developer</p>
+          <p className="mb-2">
+            <span className="font-semibold">Full-Stack Developer</span> @
+            Develhope
+          </p>
           {renderList(develhopeExperience)}
         </div>
+        <div className="mb-10">
+          <p className="mb-2">
+            <span className="font-semibold">AI Chatbot Analyst</span> @
+            UniCredit
+          </p>
+          {renderList(chatbotExperience)}
+        </div>
         <div>
-          <p className="font-semibold text-base mb-2">UniCredit</p>
-          <div>
-            <p className="text-sm mb-1">AI Chatbot Analyst</p>
-            {renderList(chatbotExperience)}
-          </div>
-          <div>
-            <p className="text-sm pt-3 pb-1">
+          <p className="mb-2">
+            <span className="font-semibold">
               Customer Care & Sales Specialist
-            </p>
-            {renderList(customerCareExperience)}
-          </div>
+            </span>{" "}
+            @ UniCredit
+          </p>
+          {renderList(customerCareExperience)}
         </div>
       </div>
-      <div>
+
+      <div className="lg:w-1/2">
         <p className="text-xl font-bold mb-10">Education</p>
         <div className="mb-10">
           <p className="font-semibold text-base pb-2">Develhope</p>
           {renderList(develhopeEducation)}
         </div>
         <div className="mb-10">
-          <p className="font-semibold text-base pb-2">
-            Università di Pisa
-          </p>
+          <p className="font-semibold text-base pb-2">Università di Pisa</p>
           {renderList(pisaEducation)}
         </div>
         <div className="mb-10">
-          <p className="font-semibold text-base pb-2">
-            Università di Milano
-          </p>
+          <p className="font-semibold text-base pb-2">Università di Milano</p>
           {renderList(milanoEducation)}
         </div>
-        <div className="mb-10">
-          <p className="font-semibold text-base pb-2">
-            Università di Palermo
-          </p>
+        <div>
+          <p className="font-semibold text-base pb-2">Università di Palermo</p>
           {renderList(palermoEducation)}
         </div>
       </div>
