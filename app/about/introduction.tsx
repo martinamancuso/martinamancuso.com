@@ -9,26 +9,17 @@ export function Introduction() {
         <Image
           src={MartinaMancusoPhoto}
           alt="martina mancuso photo"
-          style={{
-            width: "100%",
-            height: "auto",
-          }}
           className="md:hidden"
         />
         <Image
           src={MartinaMancusoPhotoDesktop}
           alt="martina mancuso photo"
-          style={{
-            width: "100%",
-            height: "auto",
-          }}
           className="hidden md:block"
         />
       </div>
       <p className="font-bold text-xl">Martina Mancuso</p>
       <p className="text-[#767676] text-sm pb-5">Junior Full-Stack Developer</p>
-      <hr />
-      <div className="text-[#767676] text-sm text-justify mt-7 pb-24 flex flex-col gap-3">
+      <div className="text-[#767676] border-[#dfdfdf] border-t text-sm text-justify pt-7 pb-7 flex flex-col gap-3">
         <p>
           «As you leave for Ithaca I hope your road is long, full of adventures,
           full of discovery.»
@@ -53,9 +44,6 @@ export function Introduction() {
           I am passionate about Communication and Psychology and I believe in
           "please" and "thank you".
         </p>
-        <div className="pt-4">
-          <hr />
-        </div>
       </div>
     </>
   );
