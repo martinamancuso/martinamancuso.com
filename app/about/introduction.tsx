@@ -19,7 +19,7 @@ export function Introduction() {
       </div>
       <p className="font-bold text-xl">Martina Mancuso</p>
       <p className="text-[#767676] text-sm pb-5">Junior Full-Stack Developer</p>
-      <div className="text-[#767676] border-[#dfdfdf] border-t text-sm text-justify pt-7 pb-24 flex flex-col gap-3">
+      <div className="text-[#767676] border-[#dfdfdf] border-t text-sm text-justify pt-7 pb-24 flex flex-col gap-5">
         <p>
           «As you leave for Ithaca I hope your road is long, full of adventures,
           full of discovery.»
