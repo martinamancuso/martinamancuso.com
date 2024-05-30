@@ -24,10 +24,10 @@ export default function About() {
       <div className="bg-white px-8 lg:px-20">
         <Skills />
       </div>
-      <div className="px-8 pb-7 lg:flex lg:flex-row justify-around">
+      <div className="px-8 pb-7 lg:pt-24 lg:flex lg:flex-row justify-around">
         <Career />
       </div>
-      <div className="px-20 pb-16">
+      <div className="px-20 pb-16 lg:pb-24">
         <hr />
       </div>
       <div className="px-8 w-full h-auto flex justify-center items-center">
