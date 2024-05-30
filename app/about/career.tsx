@@ -54,7 +54,7 @@ export function Career() {
   }
 
   return (
-    <>
+    <div className="pb-7 lg:pt-24 lg:flex lg:flex-row justify-around">
       <div className="pt-24 mb-14 lg:pt-0">
         <p className="text-xl font-bold mb-10">Experiences</p>
         <div className="mb-10">
@@ -101,6 +101,6 @@ export function Career() {
           {renderList(palermoEducation)}
         </div>
       </div>
-    </>
+    </div>
   );
 }

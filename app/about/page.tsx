@@ -16,23 +16,27 @@ export default function About() {
   }
 
   return (
-    <div className="flex flex-col w-full justify-around pb-7">
-      <div className="px-8 lg:px-20">
+    <>
+      <div className="container">
         <p className="font-extrabold text-3xl mb-16">About Me</p>
         <Introduction />
       </div>
-      <div className="bg-white px-8 lg:px-20">
-        <Skills />
+      <div className="bg-white">
+        <div className="container">
+          <Skills />
+        </div>
       </div>
-      <div className="px-8 pb-7 lg:pt-24 lg:flex lg:flex-row justify-around">
+      <div className="container">
         <Career />
       </div>
-      <div className="px-20 pb-16 lg:pb-24">
+      {/* <div className="pb-16 lg:pb-24">
         <hr />
+      </div> */}
+      <div className="container">
+        <div className="w-full h-auto flex justify-center items-center">
+          <Button onClick={downloadCv}>Download CV</Button>
+        </div>
       </div>
-      <div className="px-8 w-full h-auto flex justify-center items-center">
-        <Button onClick={downloadCv}>Download CV</Button>
-      </div>
-    </div>
+    </>
   );
 }
