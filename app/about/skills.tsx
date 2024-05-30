@@ -38,7 +38,7 @@ export function Skills() {
               alt="star"
               width={10}
               height={10}
-              className="mr-1"
+              className="mr-2"
             />
             {skill}
           </li>
@@ -49,22 +49,21 @@ export function Skills() {
 
   return (
     <>
-      <div className="py-6 justify-around lg:py-24 lg:flex">
-        <div className="font-semibold mb-14">
-          <p className="text-xl font-bold pt-24 mb-10">Tech Skills</p>
+      <div className="py-24 flex flex-col lg:flex-row gap-y-14">
+        <div className="font-semibold lg:w-1/2">
+          <p className="text-xl font-bold mb-10">Tech Skills</p>
           <div>{renderList(techSkills)}</div>
         </div>
-        <div className="py-6 lg:py-0 lg:flex lg:flex-col lg:justify-evenly">
-          <div className="font-semibold mb-14">
+
+        <div className="lg:w-1/2">
+          <div className="font-semibold pb-14">
             <p className="text-xl font-bold mb-10">Soft Skills</p>
             <div>{renderList(softSkills)}</div>
           </div>
-          <div>
-            <div className="font-semibold pb-12">
-              <p className="text-xl font-bold pt-6 mb-10 lg:pt-0">Hobbies</p>
-              <div>
-                <div>{renderList(hobbies)}</div>
-              </div>
+          <div className="font-semibold">
+            <p className="text-xl font-bold mb-10">Hobbies</p>
+            <div>
+              <div>{renderList(hobbies)}</div>
             </div>
           </div>
         </div>

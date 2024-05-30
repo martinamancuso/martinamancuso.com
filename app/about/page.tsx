@@ -21,7 +21,7 @@ export default function About() {
         <p className="font-extrabold text-3xl mb-16">About Me</p>
         <Introduction />
       </div>
-      <div className="bg-white">
+      <div className="bg-white w-full">
         <div className="container">
           <Skills />
         </div>
