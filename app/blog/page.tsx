@@ -1,4 +1,4 @@
-import { BlogCard } from "./blogCard";
+import { BlogCard } from "./blog-card";
 
 export default function Blog() {
   return (

@@ -1,6 +1,6 @@
 import Image from "next/image";
-import MartinaMancusoPhoto from "./MartinaMancusoPhoto.jpg";
-import MartinaMancusoPhotoDesktop from "./MartinaMancusoPhotoDesktop.jpg";
+import MartinaMancusoPhoto from "./martina-mancuso-photo.jpg";
+import MartinaMancusoPhotoDesktop from "./martina-mancuso-photo-desktop.jpg";
 
 export function Introduction() {
   return (
