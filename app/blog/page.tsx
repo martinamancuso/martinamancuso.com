@@ -1,3 +1,10 @@
+import { BlogCard } from "./blogCard";
+
 export default function Blog() {
-  return <h3>Blog Page</h3>;
+  return (
+    <div className="container">
+      <p className="font-extrabold text-3xl mb-16">Blog</p>
+      <BlogCard />
+    </div>
+  );
 }
