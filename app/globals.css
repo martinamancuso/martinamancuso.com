@@ -19,3 +19,9 @@ body {
   color: var(--foreground-color);
   background: var(--background-color);
 }
+
+@layer components {
+  .container {
+    @apply px-5 lg:px-10 max-w-4xl xl:max-w-5xl w-full my-0 mx-auto;
+  }
+}
