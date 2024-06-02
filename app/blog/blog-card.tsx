@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export function BlogCard() {
+export function BlogCard({ date, title }: { date: string; title: string}) {
   return (
     <div className="bg-white shadow grow shrink-0 basis-2/5">
       {/* <div>
@@ -12,8 +12,8 @@ export function BlogCard() {
         />
       </div> */}
       <div className="p-7">
-        <div className="pb-2 text-sm text-greyText">Date</div>
-        <div className="pt-2 border-t border-greyBorders text-lg font-semibold">Title</div>
+        <div className="pb-2 text-sm text-greyText">{date}</div>
+        <div className="pt-2 border-t border-greyBorders text-lg font-semibold">{title}</div>
       </div>
     </div>
   );
