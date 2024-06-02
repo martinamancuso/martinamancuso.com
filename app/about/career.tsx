@@ -36,7 +36,7 @@ export function Career() {
 
   function renderList(experiences: String[]) {
     return (
-      <ul className="text-[#767676] text-sm">
+      <ul className="text-greyText text-sm">
         {experiences.map((experience, index) => (
           <li key={index} className="flex items-start pb-2">
             <Image
@@ -54,7 +54,7 @@ export function Career() {
   }
 
   return (
-    <div className="pt-24 pb-12 flex flex-col lg:flex-row gap-y-14 border-[#dfdfdf] border-b mb-12">
+    <div className="pt-24 pb-12 flex flex-col lg:flex-row gap-y-14 border-greyBorders border-b mb-12">
       <div className="lg:w-1/2">
         <p className="text-xl font-bold mb-10">Experiences</p>
         <div className="mb-10">

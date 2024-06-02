@@ -4,8 +4,8 @@
 
 :root {
   --foreground-color: #3e3e3e;
-  /* --background-color: #F8F8F8; */
-  --background-color: #84c1f624;
+  --background-color: #F8F8F8;
+  /* --background-color: #ecf6fe; */
 }
 
 /* @media (prefers-color-scheme: dark) {

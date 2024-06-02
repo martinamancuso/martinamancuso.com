@@ -1,0 +1,8 @@
+.container {
+  &::after {
+    content: "";
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 40%;
+  }
+}
