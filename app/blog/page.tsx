@@ -6,7 +6,7 @@ export default function Blog() {
     <div className="container">
       <p className="font-extrabold text-3xl mb-16">Blog</p>
       <div
-        className={`flex flex-col gap-y-12 gap-x-12 lg:flex-row lg:flex-wrap ${style.container}`}
+        className={`flex flex-col gap-12 lg:flex-row lg:flex-wrap ${style.container}`}
       >
         <BlogCard
           image="https://picsum.photos/400/600"
