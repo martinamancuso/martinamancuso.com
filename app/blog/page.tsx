@@ -1,10 +1,11 @@
+import { PageTitle } from "../ui/page-title";
 import { BlogCard } from "./blog-card";
 import style from "./page.module.scss";
 
 export default function Blog() {
   return (
     <div className="container">
-      <p className="font-extrabold text-3xl mb-16">Blog</p>
+      <PageTitle>Blog</PageTitle>
       <div
         className={`flex flex-col gap-12 lg:flex-row lg:flex-wrap ${style.container}`}
       >

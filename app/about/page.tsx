@@ -4,6 +4,7 @@ import { Introduction } from "./introduction";
 import { Skills } from "./skills";
 import { Career } from "./career";
 import { Button } from "../ui/button";
+import { PageTitle } from "../ui/page-title";
 
 export default function About() {
   function downloadCv() {
@@ -18,7 +19,7 @@ export default function About() {
   return (
     <>
       <div className="container">
-        <p className="font-extrabold text-3xl mb-16">About Me</p>
+        <PageTitle>About Me</PageTitle>
         <Introduction />
       </div>
       <div className="bg-white w-full">

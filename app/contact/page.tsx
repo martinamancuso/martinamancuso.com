@@ -1,3 +1,9 @@
+import { PageTitle } from "../ui/page-title";
+
 export default function Contact() {
-  return <h3>Contact Page</h3>;
+  return (
+    <div className="container">
+      <PageTitle>Contact</PageTitle>
+    </div>
+  );
 }
