@@ -3,8 +3,8 @@
 import { Introduction } from "./introduction";
 import { Skills } from "./skills";
 import { Career } from "./career";
-import { Button } from "../ui/button";
-import { PageTitle } from "../ui/page-title";
+import { Button } from "../ui/button/button";
+import { PageTitle } from "../ui/page-title/page-title";
 
 export default function About() {
   function downloadCv() {

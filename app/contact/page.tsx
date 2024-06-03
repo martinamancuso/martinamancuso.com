@@ -1,4 +1,4 @@
-import { PageTitle } from "../ui/page-title";
+import { PageTitle } from "../ui/page-title/page-title";
 
 export default function Contact() {
   return (

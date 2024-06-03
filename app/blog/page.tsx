@@ -1,4 +1,4 @@
-import { PageTitle } from "../ui/page-title";
+import { PageTitle } from "../ui/page-title/page-title";
 import { BlogCard } from "./blog-card";
 import style from "./page.module.scss";
 
