@@ -6,11 +6,13 @@ import MartinaMancusoSquare from "./martina-mancuso-square.jpg";
 
 export default function Home() {
   return (
-    <div className="container">
-      <div className="flex flex-col-reverse gap-12">
+    <div className="container lg:size-full lg:flex lg:justify-around">
+      <div className="flex flex-col-reverse gap-12 lg:flex-row lg:items-center">
         <div>
-          <div className="font-bold text-2xl tracking-wide leading-loose">
-            <p>Hi, I'm <span className="text-primary">Martina!</span></p>
+          <div className="font-bold text-xl tracking-wide leading-loose lg:text-2xl">
+            <p>
+              Hi, I'm <span className="text-primary">Martina!</span>
+            </p>
             <p>Junior Full-Stack Dreamer</p>
             <p>Based in Italy</p>
           </div>
