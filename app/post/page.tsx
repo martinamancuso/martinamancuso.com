@@ -7,8 +7,8 @@ export default function Post() {
         className="w-full h-auto object-cover pb-9"
       />
       <div>
-        <div className="pb-3 text-sm text-greyText">24 Jun 2024</div>
-        <div className="py-9 border-t border-greyBorders text-2xl font-semibold">
+        <div className="pb-5 text-sm text-greyText">24 Jun 2024</div>
+        <div className="py-5 border-t border-greyBorders text-2xl font-semibold">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </div>
         <div className="text-sm text-greyText tracking-wide leading-loose text-justify flex flex-col gap-5">
