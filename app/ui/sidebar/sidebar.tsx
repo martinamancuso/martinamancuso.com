@@ -22,7 +22,7 @@ export function Sidebar() {
   ];
 
   return (
-    <aside className="fixed border-b border-greyBorders lg:border-r lg:relative w-full lg:w-[350px] xl:w-[450px] lg:shrink-0 bg-white text-center lg:flex lg:flex-col lg:justify-around lg:items-center">
+    <aside className="fixed border-b border-greyBorders lg:border-r lg:relative w-full lg:w-[350px] 2xl:w-[450px] lg:shrink-0 bg-white text-center lg:flex lg:flex-col lg:justify-around lg:items-center">
       <header className="h-12 flex items-center justify-between">
         <Link href="/">
           <Logo />
