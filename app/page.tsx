@@ -1,38 +1,32 @@
+"use client";
+
+import { Button } from "./ui/button/button";
+import Image from "next/image";
+import MartinaMancusoSquare from "./martina-mancuso-square.jpg";
+
 export default function Home() {
   return (
-    <div className="px-8">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat beatae et
-      harum saepe sint possimus neque repudiandae! Quidem sequi dignissimos,
-      facilis praesentium numquam aliquid dicta reiciendis delectus dolor eaque
-      autem! Officiis nesciunt incidunt error mollitia sunt amet iste cupiditate
-      asperiores officia alias, pariatur, deleniti maxime provident quibusdam
-      quae ipsum laborum cumque rem autem dignissimos commodi quia odit!
-      Laudantium, tempore ad. Consequuntur eius impedit aliquam corrupti
-      laudantium, dolor est reprehenderit, voluptatibus tempora minus
-      praesentium alias, ea ullam animi pariatur dicta veniam exercitationem in
-      perspiciatis voluptatem neque dignissimos nisi optio. Ad, voluptatem.
-      Ratione explicabo vitae recusandae ad alias impedit vel nemo obcaecati
-      necessitatibus hic, sunt dicta nesciunt debitis illo deleniti corporis
-      consequatur, laboriosam veritatis! Cumque dolore nulla ipsum inventore
-      corrupti odio ad. Alias fugit quis asperiores esse suscipit sint culpa
-      commodi autem voluptatum ullam veritatis error eaque maiores soluta quam
-      tenetur repellat fugiat, provident rem! Qui delectus repellendus,
-      perspiciatis repudiandae voluptatibus quod. Ut dignissimos ipsam adipisci
-      sint facere, nostrum doloremque non totam placeat facilis error et debitis
-      omnis asperiores iste modi perferendis minima quis porro, repellat, cum
-      voluptatibus vel. Vel, expedita alias. Error quam temporibus quas ipsam
-      necessitatibus, sit asperiores reiciendis a et nisi iusto, quo deleniti
-      dolorum odit dicta? Doloribus quisquam ex minus et! Quo facere minus sit,
-      veniam quam eius. Excepturi repudiandae ipsam praesentium itaque
-      voluptates sequi sunt exercitationem quos iure eos veritatis, deleniti
-      recusandae quisquam eum? Modi nisi, recusandae assumenda amet asperiores
-      esse dolore magni voluptate, consectetur voluptates eos? Corrupti nulla
-      odit repellat veritatis! Illo, quam officiis commodi dolorum cum quos enim
-      ex sapiente saepe. Doloribus laudantium recusandae, sequi iste laborum sed
-      maxime quo aliquam rerum nobis quisquam placeat! Neque tempora, dicta
-      dolorem ad vel reiciendis tempore provident corporis ex beatae,
-      accusantium dignissimos quidem deserunt quod! Commodi dignissimos, vero
-      vel ullam qui, fuga magni cupiditate harum nihil illo velit!
+    <div className="container">
+      <div className="flex flex-col-reverse gap-12">
+        <div>
+          <div className="font-bold text-2xl tracking-wide leading-loose">
+            <p>Hi, I'm <span className="text-primary">Martina!</span></p>
+            <p>Junior Full-Stack Dreamer</p>
+            <p>Based in Italy</p>
+          </div>
+          <div className="pt-11">
+            <Button onClick={() => {}}>Contact me</Button>
+          </div>
+        </div>
+        <div>
+          <Image
+            src={MartinaMancusoSquare}
+            alt="martina mancuso photo"
+            width={400}
+            height={400}
+          />
+        </div>
+      </div>
     </div>
   );
 }
