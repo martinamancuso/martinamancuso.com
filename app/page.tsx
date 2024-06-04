@@ -7,6 +7,7 @@ import MartinaMancusoSquare from "./martina-mancuso-square.jpg";
 export default function Home() {
   function handleContactForm() {
     const link = document.createElement("a");
+    link.target = "_blank";
     link.href = "https://fvxbhxqrrxf.typeform.com/to/BZ3YKWsW";
     document.body.appendChild(link);
     link.click();

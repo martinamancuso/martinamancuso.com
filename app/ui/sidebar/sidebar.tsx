@@ -18,7 +18,6 @@ export function Sidebar() {
     { label: "Home", path: "/" },
     { label: "About", path: "/about" },
     { label: "Blog", path: "/blog" },
-    { label: "Contact", path: "/contact" },
   ];
 
   return (
@@ -47,6 +46,12 @@ export function Sidebar() {
               <Link href={link.path}>{link.label}</Link>
             </li>
           ))}
+          <li
+              className="p-2 tracking-wider hover:text-primary"
+              key={`navlink-contact`}
+            >
+              <a href="https://fvxbhxqrrxf.typeform.com/to/BZ3YKWsW" target="_blank">Contact</a>
+            </li>
         </ul>
       </nav>
       <Footer />
