@@ -5,9 +5,11 @@ export function Skills() {
   const techSkills = [
     "HTML",
     "CSS",
+    "Tailwind",
     "JavaScript",
     "TypeScript",
     "React",
+    "Next.js",
     "Node.js and NPM",
     "Git Versioning System",
     "REST API",
@@ -15,7 +17,6 @@ export function Skills() {
     "Agile Methodology",
     "Google Dialogflow",
     "Draw.io",
-    "Tailwind",
   ];
 
   const softSkills = [

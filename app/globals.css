@@ -21,7 +21,10 @@ body {
 }
 
 @layer components {
+  .page-container {
+    @apply pt-24 pb-12;
+  }
   .container {
-    @apply px-5 lg:px-10 max-w-4xl xl:max-w-5xl w-full my-0 mx-auto;
+    @apply px-5 lg:px-10 max-w-4xl xl:max-w-5xl 2xl:max-w-6xl w-full my-0 mx-auto;
   }
 }

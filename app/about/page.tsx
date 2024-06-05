@@ -17,7 +17,7 @@ export default function About() {
   }
 
   return (
-    <>
+    <div className="page-container">
       <div className="container">
         <PageTitle>About Me</PageTitle>
         <Introduction />
@@ -38,6 +38,6 @@ export default function About() {
           <Button onClick={downloadCv}>Download CV</Button>
         </div>
       </div>
-    </>
+    </div>
   );
 }
