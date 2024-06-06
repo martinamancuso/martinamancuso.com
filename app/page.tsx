@@ -3,6 +3,7 @@
 import { Button } from "./ui/button/button";
 import Image from "next/image";
 import MartinaMancusoSquare from "./martina-mancuso-square.jpg";
+import { AnimatedText } from "./ui/animated-text/animated-text";
 
 export default function Home() {
   function handleContactForm() {
@@ -14,15 +15,20 @@ export default function Home() {
     document.body.removeChild(link);
   }
 
+  const martinasWords = ["Dreamer", "Developer"];
+
   return (
     <div className="container pt-20 lg:pt-0 flex flex-col lg:flex-row items-center lg:h-full">
       <div className="flex flex-col-reverse gap-6 lg:gap-0 lg:flex-row lg:items-center lg:w-full">
         <div className="lg:grow">
           <div className="font-bold text-3xl tracking-wide lg:text-4xl xl:text-5xl flex flex-col gap-3 text-center lg:text-left">
-            <p>
-              Hi, I'm <span className="text-primary">Martina</span>!
-            </p>
-            <p>Full-Stack Dreamer</p>
+            <p>Hi, I'm Martina!</p>
+            <span>
+              Full-Stack
+              <span className="text-primary">
+                <AnimatedText texts={martinasWords} />
+              </span>
+            </span>
             <p>Based in Italy</p>
           </div>
           <div className="pt-9 lg:pt-11 text-center lg:text-left">

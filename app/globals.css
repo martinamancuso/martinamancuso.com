@@ -4,7 +4,7 @@
 
 :root {
   --foreground-color: #3e3e3e;
-  --background-color: #F8F8F8;
+  --background-color: #f8f8f8;
   /* --background-color: #ecf6fe; */
 }
 
@@ -27,4 +27,48 @@ body {
   .container {
     @apply px-5 lg:px-10 max-w-4xl xl:max-w-5xl 2xl:max-w-6xl w-full my-0 mx-auto;
   }
+}
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.blur-out-expand {
+  -webkit-animation: blur-out-expand 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: blur-out-expand 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.fade-in {
+  animation: fade-in 1s ease-in both;
 }
