@@ -15,7 +15,7 @@ export default function Home() {
     document.body.removeChild(link);
   }
 
-  const martinasWords = ["Dreamer", "Developer"];
+  const martinasWords = ["Developer", "Dreamer"];
 
   return (
     <div className="container pt-20 lg:pt-0 flex flex-col lg:flex-row items-center lg:h-full">
@@ -23,12 +23,10 @@ export default function Home() {
         <div className="lg:grow">
           <div className="font-bold text-3xl tracking-wide lg:text-4xl xl:text-5xl flex flex-col gap-3 text-center lg:text-left">
             <p>Hi, I'm Martina!</p>
-            <span>
-              Full-Stack
-              <span className="text-primary">
+            <p>
+              Full-Stack&nbsp;
                 <AnimatedText texts={martinasWords} />
-              </span>
-            </span>
+            </p>
             <p>Based in Italy</p>
           </div>
           <div className="pt-9 lg:pt-11 text-center lg:text-left">

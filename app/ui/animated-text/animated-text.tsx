@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 export function AnimatedText({
   texts,
-  interval = 2000,
+  interval = 2500,
 }: {
   texts: string[];
   interval?: number;
@@ -27,6 +27,6 @@ export function AnimatedText({
   }, [texts.length, interval]);
 
   return (
-    <div className={`relative ${animationClass}`}>{texts[currentText]}</div>
+    <span className={`text-primary relative ${animationClass}`}>{texts[currentText]}</span>
   );
 }
