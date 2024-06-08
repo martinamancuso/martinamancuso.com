@@ -15,7 +15,7 @@ export default function Home() {
     document.body.removeChild(link);
   }
 
-  const martinasWords = ["Developer", "Dreamer"];
+  const martinasWords = ["Developer", "Dreamer", "Thinker", "Empathetic"];
 
   return (
     <div className="container pt-20 lg:pt-0 flex flex-col lg:flex-row items-center lg:h-full">
