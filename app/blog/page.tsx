@@ -26,7 +26,7 @@ export default async function Blog() {
           {posts.map((post: any, index: number) => (
             <BlogCard
               key={index}
-              path={`/post/${post.fields.slug}`}
+              path={`/blog/${post.fields.slug}`}
               image={assets[0].fields.file.url}
               date={post.sys.createdAt}
               title={post.fields.title}
