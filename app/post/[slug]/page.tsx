@@ -1,3 +1,4 @@
+import { FormattedDate } from '@/app/ui/formatted-date/formatted-date';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
 export async function generateStaticParams() {
@@ -32,7 +33,6 @@ export default async function Post({
   const data = await response.json();
   const post = data.items[0];
   const assets = data.includes.Asset;
-  const dateObject = new Date(post.sys.createdAt);
 
   return (
     <div className="page-container">
@@ -43,7 +43,7 @@ export default async function Post({
           className="w-full h-auto object-cover pb-9"
         />
         <div>
-          <div className="pb-5 text-sm text-greyText">{dateObject.toLocaleDateString()}</div>
+          <div className="pb-5"><FormattedDate date={post.sys.createdAt} /></div>
           <div className="py-5 border-t border-greyBorders text-2xl font-semibold">
             {post.fields.title}
           </div>
