@@ -20,7 +20,7 @@ export default function Home() {
         <div className="lg:grow">
           <div className="font-bold text-3xl tracking-wide lg:text-4xl xl:text-5xl flex flex-col gap-3 text-center lg:text-left">
             <p>
-              Hi, I'm <span className="text-primary">Martina</span>!
+              Hi, I&apos;m <span className="text-primary">Martina</span>!
             </p>
             <p>Full-Stack Dreamer</p>
             <p>Based in Italy</p>
