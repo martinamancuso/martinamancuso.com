@@ -38,9 +38,6 @@ export default function About() {
       <div className="container">
         <Career />
       </div>
-      {/* <div className="pb-16 lg:pb-24">
-        <hr />
-      </div> */}
       <div className="container">
         <div className="w-full h-auto flex justify-center items-center">
           <Button onClick={downloadCv}>Download CV</Button>
