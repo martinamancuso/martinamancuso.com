@@ -1,5 +1,6 @@
 "use client";
 
+import Head from "next/head";
 import { Introduction } from "./introduction";
 import { Skills } from "./skills";
 import { Career } from "./career";
@@ -18,6 +19,13 @@ export default function About() {
 
   return (
     <div className="page-container">
+      <Head>
+        <title>About Martina Mancuso - Full Stack Developer</title>
+        <meta
+          name="description"
+          content="Meet Martina Mancuso: a Full Stack Developer passionate about technology, reading, writing, psychology and personal growth. Explore my experiences and download my CV."
+        />
+      </Head>
       <div className="container">
         <PageTitle>About Me</PageTitle>
         <Introduction />
