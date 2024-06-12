@@ -1,5 +1,6 @@
 "use client";
 
+import Head from "next/head";
 import { Button } from "./ui/button/button";
 import Image from "next/image";
 import MartinaMancusoSquare from "./martina-mancuso-square.jpg";
@@ -16,6 +17,13 @@ export default function Home() {
 
   return (
     <div className="container pt-20 lg:pt-0 flex flex-col lg:flex-row items-center lg:h-full">
+      <Head>
+        <title>Martina Mancuso - Full Stack Developer</title>
+        <meta
+          name="description"
+          content="Discover Martina Mancuso, an Italian Full Stack Developer. Easily contact me, explore the blog, and connect on LinkedIn and GitHub. Welcome to my personal site!"
+        />
+      </Head>
       <div className="flex flex-col-reverse gap-6 lg:gap-0 lg:flex-row lg:items-center lg:w-full">
         <div className="lg:grow">
           <div className="font-bold text-3xl tracking-wide lg:text-4xl xl:text-5xl flex flex-col gap-3 text-center lg:text-left">
