@@ -5,8 +5,8 @@ import linkedinIcon from "./social-icons/linkedinIcon.png";
 export function Footer() {
   return (
     <>
-      <div className="hidden lg:flex lg:flex-col lg:gap-3">
-        <div className="lg:flex lg:flex-row lg:justify-center">
+      <div className="hidden lg:flex flex-col gap-3">
+        <div className="flex flex-row justify-center">
           <a
             target="_blank"
             rel="noopener noreferrer"
@@ -31,7 +31,7 @@ export function Footer() {
           </a>
         </div>
         <div>
-          <p className="tracking-wider hidden lg:block">
+          <p className="tracking-wider">
             Made with <span className="text-primary">❤</span>
             <br />
             with Next.js & Tailwind
