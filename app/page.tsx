@@ -27,7 +27,7 @@ export default function Home() {
       <div className="flex flex-col-reverse gap-6 lg:gap-0 lg:flex-row lg:items-center lg:w-full">
         <div className="lg:grow">
           <div className="font-bold text-3xl tracking-wide lg:text-4xl xl:text-5xl flex flex-col gap-3 text-center lg:text-left">
-            <p>Hi, I'm Martina!</p>
+            <p>Hi, I&apos;m Martina!</p>
             <p>
               Full-Stack&nbsp;
                 <AnimatedText texts={martinasWords} />
