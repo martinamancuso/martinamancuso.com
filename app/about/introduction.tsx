@@ -42,7 +42,7 @@ export function Introduction() {
         </p>
         <p>
           I am passionate about Communication and Psychology and I believe in
-          "please" and "thank you".
+          &quot;please&quot; and &quot;thank you&quot;.
         </p>
       </div>
     </>

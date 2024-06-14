@@ -1,9 +1,14 @@
-"use client";
-
-import { Button } from "./ui/button/button";
 import Image from "next/image";
 import MartinaMancusoSquare from "./martina-mancuso-square.jpg";
 import { AnimatedText } from "./ui/animated-text/animated-text";
+import type { Metadata } from "next";
+import ContactMeButton from "./contact-me-button";
+
+export const metadata: Metadata = {
+  title: "Martina Mancuso - Full Stack Developer",
+  description:
+    "Discover Martina Mancuso, an Italian Full Stack Developer. Easily contact me, explore the blog, and connect on LinkedIn and GitHub. Welcome to my personal site!",
+};
 
 export default function Home() {
   function handleContactForm() {
@@ -30,7 +35,7 @@ export default function Home() {
             <p>Based in Italy</p>
           </div>
           <div className="pt-9 lg:pt-11 text-center lg:text-left">
-            <Button onClick={handleContactForm}>Contact me</Button>
+            <ContactMeButton />
           </div>
         </div>
         <div>
