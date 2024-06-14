@@ -1,6 +1,14 @@
 import { PageTitle } from "../ui/page-title/page-title";
 import { BlogCard } from "./blog-card";
 import style from "./page.module.scss";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title:
+    "Martina Mancuso's Blog - Insights on Coding, Reading, Psychology and Personal Growth",
+  description:
+    "Discover Martina Mancuso's blog: articles on coding, psychology and personal growth. Beyond the CV and human imperfection, towards the best version of myself.",
+};
 
 export default async function Blog() {
   const response = await fetch(
