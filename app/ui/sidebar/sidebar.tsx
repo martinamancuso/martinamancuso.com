@@ -27,7 +27,7 @@ export function Sidebar() {
   return (
     <aside className="fixed border-b border-greyBorders lg:border-r lg:relative w-full lg:w-[350px] 2xl:w-[450px] lg:shrink-0 bg-white text-center lg:flex lg:flex-col lg:justify-around lg:items-center">
       <header className="h-12 flex items-center justify-between">
-        <Link href="/" scroll={false}>
+        <Link href="/">
           <Logo />
         </Link>
         <HamburgerMenuButton
@@ -47,7 +47,7 @@ export function Sidebar() {
               className="p-2 tracking-wider hover:text-primary"
               key={`navlink-${index}`}
             >
-              <Link href={link.path} onClick={handleLinkClick} scroll={false}>
+              <Link href={link.path} onClick={handleLinkClick}>
                 {link.label}
               </Link>
             </li>

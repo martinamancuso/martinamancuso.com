@@ -14,7 +14,7 @@ export function BlogCard({
 }) {
   const dateObject = new Date(date);
   return (
-      <Link href={path} className="bg-white shadow grow shrink-0 basis-2/5" scroll={false}>
+      <Link href={path} className="bg-white shadow grow shrink-0 basis-2/5">
         <img src={image} alt={title} className="w-full h-64 object-cover" />
         <div className="p-7">
           <div className="pb-2"><FormattedDate date={date} /></div>
