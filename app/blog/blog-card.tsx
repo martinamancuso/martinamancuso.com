@@ -12,7 +12,6 @@ export function BlogCard({
   date: string;
   title: string;
 }) {
-  const dateObject = new Date(date);
   return (
       <Link href={path} className="bg-white shadow grow shrink-0 basis-2/5">
         <img src={image} alt={title} className="w-full h-64 object-cover" />

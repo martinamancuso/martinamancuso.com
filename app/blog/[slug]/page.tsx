@@ -62,7 +62,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
         />
         <div>
           <div className="pb-5">
-            <FormattedDate date={post.sys.createdAt} />
+            <FormattedDate date={post.fields.date} />
           </div>
           <div className="py-5 border-t border-greyBorders text-2xl font-semibold">
             {post.fields.title}
