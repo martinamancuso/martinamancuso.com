@@ -10,13 +10,11 @@ export function AnimatedText({
   interval?: number;
 }) {
   const [currentText, setCurrentText] = useState(0);
-  const [animationClass, setAnimationClass] = useState(
-    "blur-out-expand"
-  );
+  const [animationClass, setAnimationClass] = useState("");
 
   useEffect(() => {
     const changeText = () => {
-      setAnimationClass("blur-out-expand");
+      setAnimationClass("");
       setTimeout(() => {
         setCurrentText((prev) => (prev + 1) % texts.length);
         setAnimationClass("fade-in");
@@ -24,11 +22,12 @@ export function AnimatedText({
     };
 
     const intervalId = setInterval(changeText, interval);
-
     return () => clearInterval(intervalId);
   }, [texts.length, interval]);
 
   return (
-    <span className={`text-primary relative ${animationClass}`}>{texts[currentText]}</span>
+    <span className={`text-primary relative ${animationClass}`}>
+      {texts[currentText]}
+    </span>
   );
 }

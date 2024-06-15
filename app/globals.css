@@ -29,31 +29,6 @@ body {
   }
 }
 
-@-webkit-keyframes tracking-in-expand {
-  0% {
-    letter-spacing: -0.5em;
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes tracking-in-expand {
-  0% {
-    letter-spacing: -0.5em;
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -61,12 +36,6 @@ body {
   100% {
     opacity: 1;
   }
-}
-
-.blur-out-expand {
-  -webkit-animation: blur-out-expand 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    both;
-  animation: blur-out-expand 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .fade-in {
