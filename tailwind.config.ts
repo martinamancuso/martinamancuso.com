@@ -12,7 +12,7 @@ const config: Config = {
       colors: {
         primary: "#84c0f6",
         greyBorders: colors.slate[200],
-        greyText: "#767676"
+        greyText: "#767676",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
