@@ -9,12 +9,12 @@ export function Introduction() {
         <Image
           src={MartinaMancusoPhoto}
           alt="martina mancuso photo"
-          className="md:hidden"
+          className="md:hidden rounded"
         />
         <Image
           src={MartinaMancusoPhotoDesktop}
           alt="martina mancuso photo"
-          className="hidden md:block"
+          className="hidden md:block rounded"
         />
       </div>
       <p className="font-bold text-xl">Martina Mancuso</p>

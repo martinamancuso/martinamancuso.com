@@ -36,7 +36,7 @@ export default async function Blog() {
               key={index}
               path={`/blog/${post.fields.slug}`}
               image={assets[0].fields.file.url}
-              date={post.sys.createdAt}
+              date={post.fields.date}
               title={post.fields.title}
             />
           ))}

@@ -14,6 +14,10 @@ export function Sidebar() {
     setMenuOpen((prevValue: boolean) => !prevValue);
   }
 
+  function handleLinkClick() {
+    setMenuOpen(false);
+  }
+
   const links = [
     { label: "Home", path: "/" },
     { label: "About", path: "/about" },
@@ -43,7 +47,9 @@ export function Sidebar() {
               className="p-2 tracking-wider hover:text-primary"
               key={`navlink-${index}`}
             >
-              <Link href={link.path}>{link.label}</Link>
+              <Link href={link.path} onClick={handleLinkClick}>
+                {link.label}
+              </Link>
             </li>
           ))}
           <li
@@ -54,6 +60,7 @@ export function Sidebar() {
               href="https://fvxbhxqrrxf.typeform.com/to/BZ3YKWsW"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={handleLinkClick}
             >
               Contact
             </a>
