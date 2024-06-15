@@ -5,7 +5,10 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Sidebar } from "./ui/sidebar/sidebar";
 
-const poppins = Poppins({ subsets: ["latin"], weight: ["400", "500", "600", "700", "800"] });
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+});
 
 export const metadata: Metadata = {
   title: "Martina Mancuso",
@@ -18,13 +21,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+      </head>
       <FontProvider>
         <body className={`${poppins.className}`}>
           <div className="lg:flex lg:w-screen lg:h-screen">
             <Sidebar />
-            <main className="flex-grow overflow-auto">
-              {children}
-            </main>
+            <main className="flex-grow overflow-auto">{children}</main>
           </div>
         </body>
       </FontProvider>
