@@ -25,6 +25,10 @@ export default function Home() {
             </p>
             <p>Based in Italy</p>
           </div>
+            <div className="pt-9 text-base font-normal tracking-wider text-center lg:text-left">
+              <p>Developer, but not just that: </p>
+              <p>empathetic, dreamer, thinker.</p>
+            </div>
           <div className="pt-9 lg:pt-11 text-center lg:text-left">
             <ContactMeButton />
           </div>
