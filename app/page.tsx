@@ -27,7 +27,7 @@ export default function Home() {
           </div>
             <div className="pt-9 text-base font-normal tracking-wider text-center lg:text-left">
               <p>Developer, but not just that: </p>
-              <p>empathetic, dreamer, thinker.</p>
+              <p className="pt-1">empathetic, dreamer, thinker.</p>
             </div>
           <div className="pt-9 lg:pt-11 text-center lg:text-left">
             <ContactMeButton />
