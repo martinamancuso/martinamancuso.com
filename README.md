@@ -1,36 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# martinamancuso.com
 
-## Getting Started
+As my first personal project, I chose to create a website that talks about my experiences in study and work, as well as my passions.
 
-First, run the development server:
+I wanted to create a virtual space capable of telling something about me, going beyond skills and CV.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This desire arose from the reflection of being a story. <br/>
+For me, every human being is a story: made up of experiences, emotions, and lived moments. All unique and unrepeatable.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## SSG
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+I developed this site using the SSG (Static Site Generation) pattern.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Thanks to this pattern, the pages are generated as static files at build time, rather than being dynamically generated with each user request.
 
-## Learn More
+This approach offers the following advantages: performance optimization, security, maintenance, SEO and accessibility.
 
-To learn more about Next.js, take a look at the following resources:
+## Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- TypeScript
+- Next.js
+- Tailwind
+- Contentful
+- Typeform
+- Vercel
