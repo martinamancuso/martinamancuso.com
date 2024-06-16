@@ -1,5 +1,5 @@
 import React from "react";
-import { FontProvider } from "./FontContext";
+import { FontProvider } from "./font-context";
 import { Poppins } from "next/font/google";
 import type { Metadata } from "next";
 import "./globals.css";

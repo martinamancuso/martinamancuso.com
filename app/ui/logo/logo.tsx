@@ -1,4 +1,4 @@
-import { useFonts } from "../../FontContext";
+import { useFonts } from "../../font-context";
 
 export function Logo() {
   const { dawning } = useFonts();
