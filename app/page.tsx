@@ -26,10 +26,6 @@ export default function Home() {
             <p>Based in Italy</p>
           </div>
           <div className="pt-9 tracking-wider">
-            {/* <p className="leading-relaxed">
-              Not just a developer: <br />
-              I am also an empathetic, curious person
-            </p> */}
             <p className="leading-relaxed">
             My qualities: <br/>
             listening, empathy, curiosity.
