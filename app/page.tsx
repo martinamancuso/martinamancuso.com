@@ -28,7 +28,7 @@ export default function Home() {
           <div className="pt-9 tracking-wider">
             <p className="leading-relaxed">
             My qualities: <br/>
-            listening, empathy, curiosity.
+            listening, empathy, curiosity
             </p>
           </div>
           <div className="pt-9 lg:pt-11">
