@@ -16,8 +16,8 @@ export default function Home() {
   return (
     <div className="container pt-20 lg:pt-0 flex flex-col lg:flex-row items-center lg:h-full">
       <div className="flex flex-col-reverse gap-6 lg:gap-0 lg:flex-row lg:items-center lg:w-full">
-        <div className="lg:grow">
-          <div className="font-bold text-3xl tracking-wide lg:text-3xl xl:text-4xl 2xl:text-5xl flex flex-col gap-3 text-center lg:text-left">
+        <div className="lg:grow text-center lg:text-left">
+          <div className="font-bold text-3xl tracking-wide lg:text-3xl xl:text-4xl 2xl:text-5xl flex flex-col gap-3">
             <p>Hi, I&apos;m Martina!</p>
             <p>
               Full-Stack&nbsp;
@@ -25,13 +25,17 @@ export default function Home() {
             </p>
             <p>Based in Italy</p>
           </div>
-          <div className="pt-9 text-base font-normal tracking-wider text-center lg:text-left">
+          <div className="pt-9 tracking-wider">
+            {/* <p className="leading-relaxed">
+              Not just a developer: <br />
+              I am also an empathetic, curious person
+            </p> */}
             <p className="leading-relaxed">
-              Not just a developer: <br /> I am also an empathetic and curious
-              person.
+            My qualities: <br/>
+            listening, empathy, curiosity.
             </p>
           </div>
-          <div className="pt-9 lg:pt-11 text-center lg:text-left">
+          <div className="pt-9 lg:pt-11">
             <ContactMeButton />
           </div>
         </div>
