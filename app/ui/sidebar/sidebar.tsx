@@ -26,7 +26,7 @@ export function Sidebar() {
 
   return (
     <aside className="fixed border-b border-greyBorders lg:border-r lg:relative w-full lg:w-[350px] 2xl:w-[450px] lg:shrink-0 bg-white text-center lg:flex lg:flex-col lg:justify-around lg:items-center">
-      <header className="my-2 h-12 flex items-center justify-between">
+      <header className="my-2 lg:my-0 h-12 flex items-center justify-between">
         <Link href="/">
           <Logo />
         </Link>
