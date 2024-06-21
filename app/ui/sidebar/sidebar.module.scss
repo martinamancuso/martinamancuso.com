@@ -1,14 +1,31 @@
+// .menu {
+//   max-height: 0;
+//   transition: max-height 0.7s ease-out;
+// }
+
+// .menuOpen {
+//   max-height: 200px;
+// }
+
+// @media (min-width: 1024px) {
+//   .menu {
+//     max-height: none;
+//   }
+// }
+
 .menu {
-  max-height: 0;
-  transition: max-height 0.7s ease-out;
+  height: 0;
+  transition: height 0.7s ease-out;
+  overflow: hidden;
 }
 
 .menuOpen {
-  max-height: 200px;
+  height: 100vh;
 }
 
 @media (min-width: 1024px) {
   .menu {
+    height: auto;
     max-height: none;
   }
 }
