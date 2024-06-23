@@ -71,7 +71,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
         <img
           src={assets[0].fields.file.url}
           alt={assets[0].fields.title}
-          className="w-full h-auto object-cover pb-9"
+          className="w-full h-auto pb-9"
         />
         <div>
           <div className="pb-5">
