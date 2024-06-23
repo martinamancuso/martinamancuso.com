@@ -44,7 +44,7 @@ export async function generateMetadata({
       title: post.fields.title,
       siteName: "martinamancuso.com",
       images: {
-        url: assets[0].fields.file.url,
+        url: `https:${assets[0].fields.file.url}`,
       },
       publishedTime,
       authors: "Martina Mancuso",
