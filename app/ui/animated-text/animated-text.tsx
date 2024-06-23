@@ -26,7 +26,7 @@ export function AnimatedText({
   }, [texts.length, interval]);
 
   return (
-    <span className={`text-primary relative ${animationClass}`}>
+    <span className={`text-primary relative ${animationClass}`} style={{ zIndex: -10 }}>
       {texts[currentText]}
     </span>
   );

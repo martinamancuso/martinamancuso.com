@@ -40,7 +40,7 @@ export default function Home() {
           width={400}
           height={400}
           alt="martina mancuso photo"
-          className="w-96 h-96 lg:w-80 lg:h-80 xl:w-96 xl:h-96"
+          className="lg:w-80 lg:h-80 xl:w-96 xl:h-96"
         />
       </div>
     </div>
