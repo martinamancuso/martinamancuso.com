@@ -33,9 +33,22 @@ export async function generateMetadata({
   );
   const data = await response.json();
   const post = data.items[0];
+  const assets = data.includes.Asset;
+  const publishedTime = new Date(post.fields.date).toISOString();
 
   return {
     title: `${post.fields.title} - Martina Mancuso`,
+    openGraph: {
+      type: "article",
+      url: `https://martinamancuso.com/blog/${params.slug}`,
+      title: post.fields.title,
+      siteName: "martinamancuso.com",
+      images: {
+        url: assets[0].fields.file.url,
+      },
+      publishedTime,
+      authors: "Martina Mancuso",
+    },
   } as Metadata;
 }
 
@@ -57,7 +70,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
       <div className="container">
         <img
           src={assets[0].fields.file.url}
-          alt="Lorem Ipsum"
+          alt={assets[0].fields.title}
           className="w-full h-auto object-cover pb-9"
         />
         <div>
