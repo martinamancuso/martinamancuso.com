@@ -31,7 +31,7 @@ export function Introduction() {
         </p>
         <p>
           I start this adventure with Develhope, taking the first steps towards
-          JavaScript, HTML, CSS, React, TypeScript, SQL, Node.js, step by step,
+          coding step by step,
           pixel by pixel.
         </p>
         <p>
