@@ -10,9 +10,20 @@ export const metadata: Metadata = {
     "Discover Martina Mancuso's blog: articles on coding, reading and personal growth. Beyond the CV and human imperfection, towards the best version of myself.",
 };
 
+interface Asset {
+  sys: {
+    id: string;
+  };
+  fields: {
+    file: {
+      url: string;
+    };
+  };
+}
+
 export default async function Blog() {
   const response = await fetch(
-    `https://cdn.contentful.com/spaces/${process.env.CONTENTFUL_SPACE_ID}/environments/${process.env.CONTENTFUL_ENVIRONMENT}/entries`,
+    `https://cdn.contentful.com/spaces/${process.env.CONTENTFUL_SPACE_ID}/environments/${process.env.CONTENTFUL_ENVIRONMENT}/entries?content_type=blogPost`,
     {
       headers: {
         Authorization: `Bearer ${process.env.CONTENTFUL_ACCESS_TOKEN}`,
@@ -22,7 +33,12 @@ export default async function Blog() {
 
   const data = await response.json();
   const posts = data.items;
-  const assets = data.includes.Asset;
+  const assets: Asset[] = data.includes.Asset;
+
+  const getImageUrl = (imageId: string): string => {
+    const image = assets.find((asset) => asset.sys.id === imageId);
+    return image ? image.fields.file.url : "";
+  };
 
   return (
     <div className="page-container">
@@ -35,7 +51,7 @@ export default async function Blog() {
             <BlogCard
               key={index}
               path={`/blog/${post.fields.slug}`}
-              image={assets[0].fields.file.url}
+              image={getImageUrl(post.fields.image.sys.id)}
               date={post.fields.date}
               title={post.fields.title}
             />

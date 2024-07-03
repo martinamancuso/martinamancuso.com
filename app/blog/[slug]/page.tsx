@@ -2,9 +2,21 @@ import { FormattedDate } from "@/app/ui/formatted-date/formatted-date";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { Metadata } from "next";
 
+interface Asset {
+  sys: {
+    id: string;
+  };
+  fields: {
+    title: string | undefined;
+    file: {
+      url: string;
+    };
+  };
+}
+
 export async function generateStaticParams() {
   const response = await fetch(
-    `https://cdn.contentful.com/spaces/${process.env.CONTENTFUL_SPACE_ID}/environments/${process.env.CONTENTFUL_ENVIRONMENT}/entries`,
+    `https://cdn.contentful.com/spaces/${process.env.CONTENTFUL_SPACE_ID}/environments/${process.env.CONTENTFUL_ENVIRONMENT}/entries?content_type=blogPost`,
     {
       headers: {
         Authorization: `Bearer ${process.env.CONTENTFUL_ACCESS_TOKEN}`,
@@ -22,7 +34,7 @@ export async function generateMetadata({
   params,
 }: {
   params: { slug: string };
-}): Promise<Metadata> {
+}) {
   const response = await fetch(
     `https://cdn.contentful.com/spaces/${process.env.CONTENTFUL_SPACE_ID}/environments/${process.env.CONTENTFUL_ENVIRONMENT}/entries?content_type=blogPost&fields.slug=${params.slug}`,
     {
@@ -33,8 +45,13 @@ export async function generateMetadata({
   );
   const data = await response.json();
   const post = data.items[0];
-  const assets = data.includes.Asset;
+  const assets: Asset[] = data.includes.Asset;
   const publishedTime = new Date(post.fields.date).toISOString();
+
+  const getImageUrl = (imageId: string): string => {
+    const image = assets.find((asset) => asset.sys.id === imageId);
+    return image ? image.fields.file.url : "";
+  };
 
   return {
     title: `${post.fields.title} - Martina Mancuso`,
@@ -44,12 +61,12 @@ export async function generateMetadata({
       title: post.fields.title,
       siteName: "martinamancuso.com",
       images: {
-        url: `https:${assets[0].fields.file.url}`,
+        url: `https:${getImageUrl(post.fields.image.sys.id)}`,
       },
       publishedTime,
       authors: "Martina Mancuso",
     },
-  } as Metadata;
+  };
 }
 
 export default async function Post({ params }: { params: { slug: string } }) {
@@ -63,13 +80,18 @@ export default async function Post({ params }: { params: { slug: string } }) {
   );
   const data = await response.json();
   const post = data.items[0];
-  const assets = data.includes.Asset;
+  const assets: Asset[] = data.includes.Asset;
+
+  const getImageUrl = (imageId: string): string => {
+    const image = assets.find((asset) => asset.sys.id === imageId);
+    return image ? image.fields.file.url : "";
+  };
 
   return (
     <div className="page-container">
       <div className="container">
         <img
-          src={assets[0].fields.file.url}
+          src={getImageUrl(post.fields.image.sys.id)}
           alt={assets[0].fields.title}
           className="w-full h-auto pb-9"
         />
