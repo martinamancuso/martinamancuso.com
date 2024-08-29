@@ -11,7 +11,6 @@ export function Skills() {
     "TypeScript",
     "React",
     "Next.js",
-    "Angular",
     "Node.js and NPM",
     "Git Versioning System",
     "REST API",
