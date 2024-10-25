@@ -20,7 +20,7 @@ export default function Home() {
           <div className="font-bold text-3xl tracking-wide lg:text-3xl xl:text-4xl 2xl:text-5xl flex flex-col gap-3">
             <p>Hi, I&apos;m Martina!</p>
             <p>
-              Web&nbsp;
+              Junior Web&nbsp;
               <AnimatedText texts={martinasWords} />
             </p>
             <p>Based in Italy</p>
