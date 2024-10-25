@@ -18,7 +18,7 @@ export function Introduction() {
         />
       </div>
       <p className="font-bold text-xl">Martina Mancuso</p>
-      <p className="text-greyText text-sm pb-5">Junior Full-Stack Developer</p>
+      <p className="text-greyText text-sm pb-5">Junior Web Developer</p>
       <div className="text-greyText border-greyBorders border-t text-sm text-justify pt-7 pb-24 flex flex-col gap-5">
         <p>
           «As you leave for Ithaca I hope your road is long, full of adventures,
