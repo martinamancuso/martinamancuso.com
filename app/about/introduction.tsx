@@ -21,28 +21,20 @@ export function Introduction() {
       <p className="text-greyText text-sm pb-5">Junior Web Developer</p>
       <div className="text-greyText border-greyBorders border-t text-sm text-justify pt-7 pb-24 flex flex-col gap-5">
         <p>
-          «As you leave for Ithaca I hope your road is long, full of adventures,
-          full of discovery.»
+        «As you set out for Ithaka hope your road is a long one, full of adventure, full of discovery.»
         </p>
         <p>
-          I choose to give a turn in my life, devoting myself to the study of
-          web development after having worked for almost 5 years in the world of
-          customer service.
+        I am passionate about communication in all its forms, 
+        from coding to interpersonal skills. 
+        I am also deeply interested in personal growth and psychology, 
+        and I believe in the power of words like &quot;please&quot; and &quot;thank you&quot;.
         </p>
         <p>
-          I start this adventure with Develhope, taking the first steps towards
-          coding step by step,
-          pixel by pixel.
+        Through my studies and work experience, I have learned how to collaborate in teams, 
+        find creative solutions, and stay focused on achieving both short and long-term goals.
         </p>
         <p>
-          Thanks to Develhope and my previous experience, I have developed the
-          ability to work in teams, to look for creative solutions together with
-          my colleagues and to focus tenaciously on the goals we have set, in
-          the short and long term.
-        </p>
-        <p>
-          I am passionate about Communication and Psychology and I believe in
-          &quot;please&quot; and &quot;thank you&quot;.
+        Feel free to reach out, I would love to exchange ideas!
         </p>
       </div>
     </>
