@@ -24,7 +24,6 @@ export default function Home() {
               & Junior Web&nbsp;
               <AnimatedText texts={martinasWords} />
             </p>
-            <p>Based in Italy</p>
           </div>
           <div className="pt-9 tracking-wider">
             <p className="leading-relaxed">
