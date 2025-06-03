@@ -28,7 +28,7 @@ export default function About() {
       </div>
       <div className="container">
         <div className="w-full h-auto flex justify-center items-center">
-          <DownloadCvButton />
+          {/* <DownloadCvButton /> */}
         </div>
       </div>
     </div>
