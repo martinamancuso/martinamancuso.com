@@ -5,9 +5,9 @@ import type { Metadata } from "next";
 import ContactMeButton from "./contact-me-button";
 
 export const metadata: Metadata = {
-  title: "Martina Mancuso - Web Developer",
+  title: "Martina Mancuso - Customer Care Specialist & Web Developer",
   description:
-    "Discover Martina Mancuso, an Italian Web Developer. Easily contact me, explore the blog, and connect on LinkedIn and GitHub. Welcome to my personal site!",
+    "Discover Martina Mancuso, an Italian Customer Care Specialist & Web Developer. Easily contact me, explore the blog, and connect on LinkedIn and GitHub. Welcome to my personal site!",
 };
 
 export default function Home() {

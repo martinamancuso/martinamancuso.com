@@ -6,9 +6,9 @@ import type { Metadata } from "next";
 import DownloadCvButton from "./download-cv-button";
 
 export const metadata: Metadata = {
-  title: "About Martina Mancuso - Web Developer",
+  title: "About Martina Mancuso - Customer Care Specialist & Web Developer",
   description:
-    "Meet Martina Mancuso: a Web-Developer passionate about technology, reading, writing, psychology and personal growth. Explore my experiences and download my CV.",
+    "Meet Martina Mancuso: a Customer Care Specialist & Web Developer passionate about technology, reading, writing, psychology and personal growth. Explore my experiences.",
 };
 
 export default function About() {

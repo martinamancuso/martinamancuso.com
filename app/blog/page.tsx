@@ -5,9 +5,9 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Martina Mancuso's Blog - Insights on Coding, Reading and Personal Growth",
+    "Martina Mancuso's Blog - Insights on Reading, Coding and Personal Growth",
   description:
-    "Discover Martina Mancuso's blog: articles on coding, reading and personal growth. Beyond the CV and human imperfection, towards the best version of myself.",
+    "Discover Martina Mancuso's blog: articles on readings, coding and personal growth. Beyond the CV and human imperfection, towards the better version of myself.",
 };
 
 interface Asset {
