@@ -22,8 +22,8 @@ export function Skills() {
 
   const softSkills = [
     "Conscientiousness",
-    "Time management",
-    "Effective communication",
+    "Time Management",
+    "Effective Communication",
     "Problem Solving",
     "Creativity",
   ];
