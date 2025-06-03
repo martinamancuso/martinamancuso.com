@@ -3,21 +3,24 @@ import liItemStar from "./li-item-star.png";
 
 export function Skills() {
   const techSkills = [
+    "Microsoft Office - Word, Excel, PowerPoint",
+    "BMC Remedy",
     "HTML",
     "CSS",
-    "Tailwind",
-    "Bootstrap",
     "JavaScript",
-    "TypeScript",
     "React",
-    "Next.js",
-    "Node.js and NPM",
-    "Git Versioning System",
-    "REST API",
-    "SQL and PostgreSQL",
-    "Agile Methodology",
-    "Google Dialogflow",
-    "Draw.io",
+    "SQL",
+    "Agile Methodology"
+    // "Tailwind",
+    // "Bootstrap",
+    // "TypeScript",
+    // "Next.js",
+    // "Node.js and NPM",
+    // "Git Versioning System",
+    // "REST API",
+    // "SQL and PostgreSQL",
+    // "Google Dialogflow",
+    // "Draw.io",
   ];
 
   const softSkills = [
